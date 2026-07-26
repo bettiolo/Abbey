@@ -100,6 +100,7 @@ namespace Abbey.Tests.EditMode
         {
             AssertIdentityProjected("Bellkeeper", "bellkeeper_lowpoly");
             AssertIdentityProjected("BlackHound", "black_hound_lowpoly");
+            AssertIdentityProjected("AbbeyFlame", "AbbeyFlame");
         }
 
         [Test]

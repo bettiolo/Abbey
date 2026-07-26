@@ -1189,16 +1189,19 @@ tasks:
     title: Sprite polish, Unity gate, screenshots, and validation evidence
     phase: sprite-projection
     depends_on: [P2D-06]
-    status: in_progress
+    status: done
     assigned_to: orchestrator
-    branch: codex/sprite-art-completion
+    branch: codex/sprite-art-final
+    validated_commit: 6290ee9
     validation: >
       Technical candidate passed the local Unity 6000.5.2f1 MCP gate at runtime commit
-      0f2d678: both scenes, deterministic sprite import/catalog validation, EditMode
-      418/418, PlayMode 72/72, console errors 0, and six inspected screenshots. A
-      deterministic Abbey identity bake resolved 17 of the original 23 visual gaps;
-      six roles remain explicitly unresolved, so the no-mixed-fallback acceptance
-      criterion and human art gate are not yet satisfied.
+      6290ee9: both scenes, 55/55 generated imports, deterministic sprite
+      import/catalog validation, EditMode 419/419, PlayMode 72/72, console errors 0,
+      six canonical screenshots, and focused Sacred Flame / nightmare identity proofs.
+      The deterministic Abbey identity bake now resolves all 23 original visual gaps;
+      the manifest has 54 sheets, 402 slices, 84 mapped roles, and zero unresolved
+      identities. Automated implementation is complete; GATE-P2D-ART remains
+      human-owned.
 
 gates:
   - id: GATE-0.1
@@ -1260,12 +1263,11 @@ gates:
     kind: human_review
     question: Does the sprite projection have the right camera, scale, palette, and readable building/character kit?
     status: pending
-    ready: false
+    ready: true
     evidence: >
-      A technically validated draft candidate and six canonical screenshots exist on
-      codex/sprite-art-completion. Abbey-generated identity sheets now cover the
-      Bellkeeper, Black Hound, Stag, ruined bell tower, cloister states, campfire,
-      shipwreck props, and five bespoke nightmares. Dead Worker, Root Walker, Bell Mimic,
-      Hollow Deer, Charcoal Dead, and Sacred Flame still retain reversible 3D identity
-      fallbacks. Resolve or explicitly accept that art debt before asking the repository
-      owner for camera/scale/palette approval.
+      A technically validated candidate, six canonical screenshots, and focused final
+      identity proofs exist at validated runtime commit 6290ee9. Abbey-generated identity
+      sheets now cover every original signature gap, including Dead Worker, Root Walker,
+      Bell Mimic, Hollow Deer, Charcoal Dead, and Sacred Flame. The catalog has zero
+      unresolved identities and no mixed 3D fallback for those roles. The repository
+      owner must still judge camera, scale, palette, and readability before approval.

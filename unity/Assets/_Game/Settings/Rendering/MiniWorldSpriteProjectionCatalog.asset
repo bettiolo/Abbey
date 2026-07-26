@@ -1363,6 +1363,24 @@ MonoBehaviour:
     sortingOffset: 23
     participatesInPhaseTint: 1
     authoredFootprint: {x: 0, y: 0}
+  - assetId: BellMimic
+    role: actor.nightmare
+    sprite: {fileID: -452108607485615906, guid: 189adb5da9cf046a88cb300b7aa9ed82, type: 3}
+    southSprite: {fileID: -452108607485615906, guid: 189adb5da9cf046a88cb300b7aa9ed82, type: 3}
+    northSprite: {fileID: 9028086800669524157, guid: 189adb5da9cf046a88cb300b7aa9ed82, type: 3}
+    eastSprite: {fileID: 9069829290257636275, guid: 189adb5da9cf046a88cb300b7aa9ed82, type: 3}
+    westSprite: {fileID: 4629855470166513825, guid: 189adb5da9cf046a88cb300b7aa9ed82, type: 3}
+    southWalk: []
+    northWalk: []
+    eastWalk: []
+    westWalk: []
+    walkFrameSeconds: 0.2
+    layout: 0
+    visualScale: 2.35
+    anchorOffset: {x: 0, y: 0, z: 0}
+    sortingOffset: 25
+    participatesInPhaseTint: 1
+    authoredFootprint: {x: 0, y: 0}
   - assetId: ChainHound
     role: actor.nightmare
     sprite: {fileID: 1787752209986361194, guid: ac2ac254c22904c83b09e68952180406, type: 3}
@@ -1377,6 +1395,42 @@ MonoBehaviour:
     walkFrameSeconds: 0.2
     layout: 0
     visualScale: 2.4
+    anchorOffset: {x: 0, y: 0, z: 0}
+    sortingOffset: 25
+    participatesInPhaseTint: 1
+    authoredFootprint: {x: 0, y: 0}
+  - assetId: CharcoalDead
+    role: actor.nightmare
+    sprite: {fileID: -3189770025116557683, guid: a3097b5217478442d9701bd6df8f2994, type: 3}
+    southSprite: {fileID: -3189770025116557683, guid: a3097b5217478442d9701bd6df8f2994, type: 3}
+    northSprite: {fileID: -3625341599586877802, guid: a3097b5217478442d9701bd6df8f2994, type: 3}
+    eastSprite: {fileID: 4271277157388442510, guid: a3097b5217478442d9701bd6df8f2994, type: 3}
+    westSprite: {fileID: -2112726252063721653, guid: a3097b5217478442d9701bd6df8f2994, type: 3}
+    southWalk: []
+    northWalk: []
+    eastWalk: []
+    westWalk: []
+    walkFrameSeconds: 0.2
+    layout: 0
+    visualScale: 2.25
+    anchorOffset: {x: 0, y: 0, z: 0}
+    sortingOffset: 25
+    participatesInPhaseTint: 1
+    authoredFootprint: {x: 0, y: 0}
+  - assetId: DeadWorker
+    role: actor.nightmare
+    sprite: {fileID: -2617858757586807173, guid: 9e136ba56e21d4558b7d82d6b4f3f669, type: 3}
+    southSprite: {fileID: -2617858757586807173, guid: 9e136ba56e21d4558b7d82d6b4f3f669, type: 3}
+    northSprite: {fileID: 9157411473403396031, guid: 9e136ba56e21d4558b7d82d6b4f3f669, type: 3}
+    eastSprite: {fileID: -4352359945234356394, guid: 9e136ba56e21d4558b7d82d6b4f3f669, type: 3}
+    westSprite: {fileID: -3121231069280229264, guid: 9e136ba56e21d4558b7d82d6b4f3f669, type: 3}
+    southWalk: []
+    northWalk: []
+    eastWalk: []
+    westWalk: []
+    walkFrameSeconds: 0.2
+    layout: 0
+    visualScale: 2.2
     anchorOffset: {x: 0, y: 0, z: 0}
     sortingOffset: 25
     participatesInPhaseTint: 1
@@ -1417,6 +1471,24 @@ MonoBehaviour:
     sortingOffset: 25
     participatesInPhaseTint: 1
     authoredFootprint: {x: 0, y: 0}
+  - assetId: HollowDeer
+    role: actor.nightmare
+    sprite: {fileID: -4720642773099377088, guid: 508a7b4f54fad43a1bf97535659347dd, type: 3}
+    southSprite: {fileID: -4720642773099377088, guid: 508a7b4f54fad43a1bf97535659347dd, type: 3}
+    northSprite: {fileID: -4334123294121395897, guid: 508a7b4f54fad43a1bf97535659347dd, type: 3}
+    eastSprite: {fileID: -8153176533699930679, guid: 508a7b4f54fad43a1bf97535659347dd, type: 3}
+    westSprite: {fileID: -2355937107021098749, guid: 508a7b4f54fad43a1bf97535659347dd, type: 3}
+    southWalk: []
+    northWalk: []
+    eastWalk: []
+    westWalk: []
+    walkFrameSeconds: 0.2
+    layout: 0
+    visualScale: 2.55
+    anchorOffset: {x: 0, y: 0, z: 0}
+    sortingOffset: 25
+    participatesInPhaseTint: 1
+    authoredFootprint: {x: 0, y: 0}
   - assetId: LanternMoth
     role: actor.nightmare
     sprite: {fileID: 1016214392264945313, guid: f22754ba54dd94dfbbb7cc4087418e85, type: 3}
@@ -1449,6 +1521,24 @@ MonoBehaviour:
     walkFrameSeconds: 0.2
     layout: 0
     visualScale: 2.2
+    anchorOffset: {x: 0, y: 0, z: 0}
+    sortingOffset: 25
+    participatesInPhaseTint: 1
+    authoredFootprint: {x: 0, y: 0}
+  - assetId: RootWalker
+    role: actor.nightmare
+    sprite: {fileID: -4921010079577504696, guid: ddb71805d48514da99734ae1ca7880e0, type: 3}
+    southSprite: {fileID: -4921010079577504696, guid: ddb71805d48514da99734ae1ca7880e0, type: 3}
+    northSprite: {fileID: 3772964936529274529, guid: ddb71805d48514da99734ae1ca7880e0, type: 3}
+    eastSprite: {fileID: -4019064945148107723, guid: ddb71805d48514da99734ae1ca7880e0, type: 3}
+    westSprite: {fileID: 8082525202217242754, guid: ddb71805d48514da99734ae1ca7880e0, type: 3}
+    southWalk: []
+    northWalk: []
+    eastWalk: []
+    westWalk: []
+    walkFrameSeconds: 0.2
+    layout: 0
+    visualScale: 2.7
     anchorOffset: {x: 0, y: 0, z: 0}
     sortingOffset: 25
     participatesInPhaseTint: 1
@@ -1596,6 +1686,24 @@ MonoBehaviour:
     anchorOffset: {x: 0, y: 0, z: 0}
     sortingOffset: 15
     participatesInPhaseTint: 1
+    authoredFootprint: {x: 0, y: 0}
+  - assetId: AbbeyFlame
+    role: prop.sacredFlame
+    sprite: {fileID: 8724245931851381707, guid: 4b41db33dbf274a74be3cea80fb3e80f, type: 3}
+    southSprite: {fileID: 0}
+    northSprite: {fileID: 0}
+    eastSprite: {fileID: 0}
+    westSprite: {fileID: 0}
+    southWalk: []
+    northWalk: []
+    eastWalk: []
+    westWalk: []
+    walkFrameSeconds: 0.2
+    layout: 0
+    visualScale: 1.65
+    anchorOffset: {x: 0, y: 0, z: 0}
+    sortingOffset: 18
+    participatesInPhaseTint: 0
     authoredFootprint: {x: 0, y: 0}
   - assetId: shipwreck_barrel
     role: prop.shipwreckBarrel

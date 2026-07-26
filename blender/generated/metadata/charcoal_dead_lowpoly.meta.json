@@ -1,0 +1,177 @@
+{
+  "id": "charcoal_dead_lowpoly",
+  "generated_at": "2026-07-26T15:33:24.976611+00:00",
+  "spec": {
+    "id": "charcoal_dead_lowpoly",
+    "type": "character",
+    "theme": "nightmare",
+    "footprint": {
+      "width": 1.2,
+      "depth": 1.4,
+      "height": 2.2
+    },
+    "style": {
+      "silhouette": "a kiln-burned corpse still walking: a narrow blackened body bowed under a lumpy charcoal sack, brittle angular limbs, ash crust on the shoulders and a few ember cracks glowing through the chest and face",
+      "materials": [
+        "mat_nightmare_black",
+        "mat_ash",
+        "mat_ember"
+      ]
+    },
+    "required_parts": [
+      "brittle_legs",
+      "burned_body",
+      "charcoal_sack",
+      "ash_crust",
+      "bowed_head",
+      "ember_cracks"
+    ],
+    "variants": [
+      "day",
+      "night",
+      "winter"
+    ],
+    "limits": {
+      "max_triangles": 1500,
+      "max_materials": 3
+    },
+    "anchors": [
+      {
+        "name": "ember",
+        "type": "interaction"
+      }
+    ],
+    "sprite_projection": {
+      "enabled": true,
+      "filename": "abbey_generated_charcoal_dead_lowpoly.png",
+      "cell_size": 48,
+      "views": [
+        "south",
+        "east",
+        "north",
+        "west"
+      ],
+      "camera_padding": 1.3,
+      "color_steps": 10,
+      "outline_color": [
+        0.025,
+        0.03,
+        0.04
+      ],
+      "catalog_entries": [
+        {
+          "stable_role_id": "role.actor.nightmare.charcoalDead",
+          "asset_id": "CharcoalDead",
+          "roles": [
+            "actor.nightmare"
+          ],
+          "component_type_names": [
+            "Abbey.Nightmares.ConsequenceMonsterController"
+          ],
+          "visual_scale": 2.25,
+          "anchor_offset": [
+            0.0,
+            0.0
+          ],
+          "sort_offset": 25,
+          "phase_tint": true,
+          "authored_footprint": null
+        }
+      ]
+    },
+    "pivot": "center_bottom"
+  },
+  "dimensions": {
+    "width": 0.85187,
+    "depth": 1.25141,
+    "height": 1.94256,
+    "min": [
+      -0.42594,
+      -0.62571,
+      -0.0
+    ],
+    "max": [
+      0.42594,
+      0.62571,
+      1.94256
+    ]
+  },
+  "triangle_count": 200,
+  "material_count": 3,
+  "materials": [
+    "mat_ash",
+    "mat_ember",
+    "mat_nightmare_black"
+  ],
+  "anchors": [
+    {
+      "name": "ember",
+      "type": "interaction"
+    }
+  ],
+  "files": {
+    "glb": "blender/generated/glb/charcoal_dead_lowpoly.glb",
+    "blend": "blender/generated/blend/charcoal_dead_lowpoly.blend",
+    "previews": {
+      "day": "blender/generated/previews/charcoal_dead_lowpoly_preview_day.png",
+      "night": "blender/generated/previews/charcoal_dead_lowpoly_preview_night.png",
+      "winter": "blender/generated/previews/charcoal_dead_lowpoly_preview_winter.png",
+      "grayscale": "blender/generated/previews/charcoal_dead_lowpoly_preview_grayscale.png"
+    }
+  },
+  "validation": {
+    "passed": true,
+    "checks": [
+      {
+        "name": "glb_exists",
+        "passed": true,
+        "detail": "blender/generated/glb/charcoal_dead_lowpoly.glb (30500 bytes)"
+      },
+      {
+        "name": "blend_saved",
+        "passed": true,
+        "detail": "blender/generated/blend/charcoal_dead_lowpoly.blend"
+      },
+      {
+        "name": "previews_exist",
+        "passed": true,
+        "detail": "all 4 previews rendered"
+      },
+      {
+        "name": "pivot_center_bottom",
+        "passed": true,
+        "detail": "minZ=-0.0000 centerXY=(0.0000, 0.0000)"
+      },
+      {
+        "name": "footprint_fits",
+        "passed": true,
+        "detail": "asset 0.852x1.251x1.943 vs footprint 1.2x1.4x2.2"
+      },
+      {
+        "name": "triangle_budget",
+        "passed": true,
+        "detail": "200/1500 triangles"
+      },
+      {
+        "name": "material_budget",
+        "passed": true,
+        "detail": "3/3 materials: ['mat_ash', 'mat_ember', 'mat_nightmare_black']"
+      },
+      {
+        "name": "materials_in_library",
+        "passed": true,
+        "detail": "all in closed library"
+      },
+      {
+        "name": "anchors_present",
+        "passed": true,
+        "detail": "required=['ember'] present=['ember']"
+      },
+      {
+        "name": "collision_proxy",
+        "passed": true,
+        "detail": "charcoal_dead_lowpoly_collision present"
+      }
+    ]
+  }
+}

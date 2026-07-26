@@ -1,0 +1,39 @@
+{
+  "id": "sacred_flame_t1",
+  "type": "prop",
+  "theme": "abbey",
+  "footprint": { "width": 1.25, "depth": 1.25, "height": 1.8 },
+  "style": {
+    "silhouette": "the abbey's eternal flame: a broad old-stone brazier with three tall interlocking tongues of sacred fire, a golden heart visible at its centre and four gold shrine marks around the rim",
+    "materials": ["mat_old_stone", "mat_flame", "mat_sacred_gold"]
+  },
+  "required_parts": ["brazier", "rim", "sacred_marks", "triple_flame", "golden_heart"],
+  "variants": ["day", "night", "winter"],
+  "limits": { "max_triangles": 800, "max_materials": 3 },
+  "anchors": [
+    { "name": "flame", "type": "light" }
+  ],
+  "sprite_projection": {
+    "enabled": true,
+    "filename": "abbey_generated_sacred_flame_t1.png",
+    "cell_size": 48,
+    "views": ["south"],
+    "camera_padding": 1.22,
+    "color_steps": 12,
+    "outline_color": [0.06, 0.05, 0.04],
+    "catalog_entries": [
+      {
+        "stable_role_id": "role.prop.sacredFlame",
+        "asset_id": "AbbeyFlame",
+        "roles": ["prop.sacredFlame"],
+        "component_type_names": ["Abbey.Light.LightSource"],
+        "visual_scale": 1.65,
+        "anchor_offset": [0.0, 0.0],
+        "sort_offset": 18,
+        "phase_tint": false,
+        "authored_footprint": null
+      }
+    ]
+  },
+  "pivot": "center_bottom"
+}

@@ -39,18 +39,24 @@ Generated deterministically from `manifest.json`. Generic sheets come from the p
 | `prop_sheep` | `merchantShadeCC0` | prop | 64×64 | `601f7519fc525859797421dd94a091fe6ef4bb203eb02f839444f3408d330a00` | `MiniWorldSprites/Animals/Sheep.png` |
 | `ui_highlights` | `merchantShadeCC0` | ui | 80×16 | `491406a4f6bc7d5dfe7329d0d13a7bdd51a1bae7c90bdc043a6ba0d03dd1382d` | `MiniWorldSprites/User Interface/Highlighted-Boxes.png` |
 | `abbey_identity_abbey_cloister_t1` | `abbeySpecGenerated` | abbeyIdentity | 64×64 | `b5e1c0952bff6313fc464833e7fe8ffd3dc22d0475bf7c07bb9819ea242798c2` | `blender/asset_specs/buildings/abbey_cloister_t1.json` |
+| `abbey_identity_bell_mimic_lowpoly` | `abbeySpecGenerated` | abbeyIdentity | 192×48 | `4e62b8f5822f0e7786c9b14f1af4fb6c756df865651fb2e24350ca867895690e` | `blender/asset_specs/characters/bell_mimic_lowpoly.json` |
 | `abbey_identity_bell_tower_ruined` | `abbeySpecGenerated` | abbeyIdentity | 64×64 | `69d68c6e5dad2196d3f080d7c11a2d8b17d654740110fcfa78227b80dfe1de8f` | `blender/asset_specs/buildings/bell_tower_ruined.json` |
 | `abbey_identity_bellkeeper_lowpoly` | `abbeySpecGenerated` | abbeyIdentity | 128×32 | `d4e1d8ea914e41b5d497c39c9a35ee9d87405508bbfee48b15fae0a1dcd28c35` | `blender/asset_specs/characters/bellkeeper_lowpoly.json` |
 | `abbey_identity_black_hound_lowpoly` | `abbeySpecGenerated` | abbeyIdentity | 128×32 | `acc80b7c2cc531553bba04b8769d33f6ed3b283fbcfafb4e2e83ee61ae7f61eb` | `blender/asset_specs/beasts/black_hound_lowpoly.json` |
 | `abbey_identity_campfire_t1` | `abbeySpecGenerated` | abbeyIdentity | 32×32 | `0b72f6ad92df4dd88fb7aa4aedb2c7ea4d252dd00f1b32704d81003cc95424cb` | `blender/asset_specs/props/campfire_t1.json` |
 | `abbey_identity_chain_hound_lowpoly` | `abbeySpecGenerated` | abbeyIdentity | 128×32 | `588edcb459bb31846f9072e5b03c05753e2a2929db5a5ccd663a181f207b8bd0` | `blender/asset_specs/characters/chain_hound_lowpoly.json` |
+| `abbey_identity_charcoal_dead_lowpoly` | `abbeySpecGenerated` | abbeyIdentity | 192×48 | `f32c0e86888aa27e76a763c7a3fd489f435dea77f5f175081b07862ccfd04e07` | `blender/asset_specs/characters/charcoal_dead_lowpoly.json` |
 | `abbey_identity_charcoal_kiln_t1` | `abbeySpecGenerated` | abbeyIdentity | 48×48 | `c8336d92604bb6e84fc40b253ba8f728101e7be0d1e02f82a2f7b240f4ef73c7` | `blender/asset_specs/buildings/charcoal_kiln_t1.json` |
+| `abbey_identity_dead_worker_lowpoly` | `abbeySpecGenerated` | abbeyIdentity | 192×48 | `927969ee9f534a83648bb5bb8d1b76cbda58a34aa3cc525f8d5a62a338dc3f9f` | `blender/asset_specs/characters/dead_worker_lowpoly.json` |
 | `abbey_identity_drowned_sailor_lowpoly` | `abbeySpecGenerated` | abbeyIdentity | 128×32 | `552ce2425041db4a8923a7b04ad935bdb5178eb5607ad80275a91c14010496fe` | `blender/asset_specs/characters/drowned_sailor_lowpoly.json` |
 | `abbey_identity_faceless_saint_lowpoly` | `abbeySpecGenerated` | abbeyIdentity | 192×48 | `da643c8f7a56e14418987a7b72cac6200eb29a9bd3b2a946766d6337ff2a94ed` | `blender/asset_specs/characters/faceless_saint_lowpoly.json` |
+| `abbey_identity_hollow_deer_lowpoly` | `abbeySpecGenerated` | abbeyIdentity | 192×48 | `63375d2207aad368042d6419c6cc91ca51fb13cc7c2de302338f833a2c534cf6` | `blender/asset_specs/characters/hollow_deer_lowpoly.json` |
 | `abbey_identity_hound_chain` | `abbeySpecGenerated` | abbeyIdentity | 32×32 | `5fc834e5da0bd745fb56e6514a57b54ddc4fe4df46f14644b56365df95065a5f` | `blender/asset_specs/props/hound_chain.json` |
 | `abbey_identity_lantern_moth_lowpoly` | `abbeySpecGenerated` | abbeyIdentity | 128×32 | `f507e9c240e431762adb6d4e856621637966f236db882be805f6f0a28d6899eb` | `blender/asset_specs/characters/lantern_moth_lowpoly.json` |
 | `abbey_identity_lantern_post_t1` | `abbeySpecGenerated` | abbeyIdentity | 48×48 | `a3cd0f391ee8d64b30cc76b1f73289eb280f3bfcc7dbdb92bce4578f6e672fb6` | `blender/asset_specs/props/lantern_post_t1.json` |
 | `abbey_identity_pale_hound_lowpoly` | `abbeySpecGenerated` | abbeyIdentity | 128×32 | `e3cbdd217401aa57788fed0c4015f92558afcdc1377677176def5df79859cc7c` | `blender/asset_specs/characters/pale_hound_lowpoly.json` |
+| `abbey_identity_root_walker_lowpoly` | `abbeySpecGenerated` | abbeyIdentity | 192×48 | `9c2d8bd0b77e590a3e533c6be9c5dde92766f1aca74c2835ae6419c21379d8a7` | `blender/asset_specs/characters/root_walker_lowpoly.json` |
+| `abbey_identity_sacred_flame_t1` | `abbeySpecGenerated` | abbeyIdentity | 48×48 | `530f7d0bc710bc2bb9ac80f4f245fa1ce09a84af57cba0920dc3eddd0bc36ba3` | `blender/asset_specs/props/sacred_flame_t1.json` |
 | `abbey_identity_shipwreck_barrel` | `abbeySpecGenerated` | abbeyIdentity | 32×32 | `f9f308cd9857c446e21b736cf47045c29f1318a51f4717776cfce2b7758ad10f` | `blender/asset_specs/props/shipwreck_barrel.json` |
 | `abbey_identity_shipwreck_hull` | `abbeySpecGenerated` | abbeyIdentity | 64×64 | `11087e801816c7d8e0f93a7c614b3f8b7057782a490d3252b0cd1082987eba4b` | `blender/asset_specs/terrain/shipwreck_hull.json` |
 | `abbey_identity_stag_beneath_abbey_lowpoly` | `abbeySpecGenerated` | abbeyIdentity | 192×48 | `13505e8c2a066a65c4f87cb56ed7105d8a8f2776fc1241497fe6762f51db8486` | `blender/asset_specs/beasts/stag_beneath_abbey_lowpoly.json` |
@@ -122,11 +128,16 @@ Generated deterministically from `manifest.json`. Generic sheets come from the p
 | `role.dynamic.night_objective` | `night_objective` | `ui_highlights:ui_highlights_r00_c04` | false |
 | `role.actor.bellkeeper` | `bellkeeper_lowpoly` | `abbey_identity_bellkeeper_lowpoly:abbey_identity_bellkeeper_lowpoly_south` | false |
 | `role.actor.blackHound` | `black_hound_lowpoly` | `abbey_identity_black_hound_lowpoly:abbey_identity_black_hound_lowpoly_south` | false |
+| `role.actor.nightmare.bellMimic` | `BellMimic` | `abbey_identity_bell_mimic_lowpoly:abbey_identity_bell_mimic_lowpoly_south` | false |
 | `role.actor.nightmare.chainHound` | `ChainHound` | `abbey_identity_chain_hound_lowpoly:abbey_identity_chain_hound_lowpoly_south` | false |
+| `role.actor.nightmare.charcoalDead` | `CharcoalDead` | `abbey_identity_charcoal_dead_lowpoly:abbey_identity_charcoal_dead_lowpoly_south` | false |
+| `role.actor.nightmare.deadWorker` | `DeadWorker` | `abbey_identity_dead_worker_lowpoly:abbey_identity_dead_worker_lowpoly_south` | false |
 | `role.actor.nightmare.drownedSailor` | `DrownedSailor` | `abbey_identity_drowned_sailor_lowpoly:abbey_identity_drowned_sailor_lowpoly_south` | false |
 | `role.actor.nightmare.facelessSaint` | `FacelessSaint` | `abbey_identity_faceless_saint_lowpoly:abbey_identity_faceless_saint_lowpoly_south` | false |
+| `role.actor.nightmare.hollowDeer` | `HollowDeer` | `abbey_identity_hollow_deer_lowpoly:abbey_identity_hollow_deer_lowpoly_south` | false |
 | `role.actor.nightmare.lanternMoth` | `LanternMoth` | `abbey_identity_lantern_moth_lowpoly:abbey_identity_lantern_moth_lowpoly_south` | false |
 | `role.actor.nightmare.paleHound` | `PaleHound` | `abbey_identity_pale_hound_lowpoly:abbey_identity_pale_hound_lowpoly_south` | false |
+| `role.actor.nightmare.rootWalker` | `RootWalker` | `abbey_identity_root_walker_lowpoly:abbey_identity_root_walker_lowpoly_south` | false |
 | `role.actor.stag` | `stag_beneath_abbey_lowpoly` | `abbey_identity_stag_beneath_abbey_lowpoly:abbey_identity_stag_beneath_abbey_lowpoly_south` | false |
 | `role.building.abbeyCloister` | `abbey_cloister_t1` | `abbey_identity_abbey_cloister_t1:abbey_identity_abbey_cloister_t1_south` | false |
 | `role.building.abbeyCloisterRepair` | `abbey_cloister_repair` | `abbey_identity_abbey_cloister_t1:abbey_identity_abbey_cloister_t1_south` | false |
@@ -135,6 +146,7 @@ Generated deterministically from `manifest.json`. Generic sheets come from the p
 | `role.building.lanternPost` | `lantern_post_t1` | `abbey_identity_lantern_post_t1:abbey_identity_lantern_post_t1_south` | false |
 | `role.building.ruinedBellTower` | `bell_tower_ruined` | `abbey_identity_bell_tower_ruined:abbey_identity_bell_tower_ruined_south` | false |
 | `role.prop.houndChain` | `hound_chain` | `abbey_identity_hound_chain:abbey_identity_hound_chain_south` | false |
+| `role.prop.sacredFlame` | `AbbeyFlame` | `abbey_identity_sacred_flame_t1:abbey_identity_sacred_flame_t1_south` | false |
 | `role.prop.shipwreckBarrel` | `shipwreck_barrel` | `abbey_identity_shipwreck_barrel:abbey_identity_shipwreck_barrel_south` | false |
 | `role.prop.shipwreckHull` | `shipwreck_hull` | `abbey_identity_shipwreck_hull:abbey_identity_shipwreck_hull_south` | false |
 
@@ -142,9 +154,3 @@ Generated deterministically from `manifest.json`. Generic sheets come from the p
 
 | Role | Asset ID | Signature | Reason |
 |---|---|---:|---|
-| `actor.nightmare.deadWorker` | `DeadWorker` | true | Generic skeleton loses the worker identity. |
-| `actor.nightmare.rootWalker` | `RootWalker` | true | No root-bodied monster sprite. |
-| `actor.nightmare.bellMimic` | `BellMimic` | true | No bell mimic sprite. |
-| `actor.nightmare.hollowDeer` | `HollowDeer` | true | No deer sprite. |
-| `actor.nightmare.charcoalDead` | `CharcoalDead` | true | Generic skeleton lacks charcoal/burnt identity. |
-| `prop.sacredFlame` | `AbbeyFlame` | true | No flame sprite with the Abbey sacred-light language. |

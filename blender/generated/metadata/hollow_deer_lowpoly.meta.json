@@ -1,0 +1,177 @@
+{
+  "id": "hollow_deer_lowpoly",
+  "generated_at": "2026-07-26T15:34:22.686833+00:00",
+  "spec": {
+    "id": "hollow_deer_lowpoly",
+    "type": "character",
+    "theme": "nightmare",
+    "footprint": {
+      "width": 1.8,
+      "depth": 2.8,
+      "height": 2.5
+    },
+    "style": {
+      "silhouette": "a gaunt deer emptied from within: impossibly thin legs, exposed pale ribs circling a black open cavity, a lowered skull-like head with no face, and asymmetrical broken antlers that distinguish it from the noble stag",
+      "materials": [
+        "mat_bone",
+        "mat_nightmare_black",
+        "mat_ash"
+      ]
+    },
+    "required_parts": [
+      "thin_legs",
+      "hollow_body",
+      "exposed_ribs",
+      "lowered_skull",
+      "broken_antlers",
+      "void_face"
+    ],
+    "variants": [
+      "day",
+      "night",
+      "winter"
+    ],
+    "limits": {
+      "max_triangles": 1500,
+      "max_materials": 3
+    },
+    "anchors": [
+      {
+        "name": "head",
+        "type": "interaction"
+      }
+    ],
+    "sprite_projection": {
+      "enabled": true,
+      "filename": "abbey_generated_hollow_deer_lowpoly.png",
+      "cell_size": 48,
+      "views": [
+        "south",
+        "east",
+        "north",
+        "west"
+      ],
+      "camera_padding": 1.32,
+      "color_steps": 10,
+      "outline_color": [
+        0.025,
+        0.03,
+        0.04
+      ],
+      "catalog_entries": [
+        {
+          "stable_role_id": "role.actor.nightmare.hollowDeer",
+          "asset_id": "HollowDeer",
+          "roles": [
+            "actor.nightmare"
+          ],
+          "component_type_names": [
+            "Abbey.Nightmares.ConsequenceMonsterController"
+          ],
+          "visual_scale": 2.55,
+          "anchor_offset": [
+            0.0,
+            0.0
+          ],
+          "sort_offset": 25,
+          "phase_tint": true,
+          "authored_footprint": null
+        }
+      ]
+    },
+    "pivot": "center_bottom"
+  },
+  "dimensions": {
+    "width": 0.83281,
+    "depth": 2.04442,
+    "height": 2.05738,
+    "min": [
+      -0.41641,
+      -1.02221,
+      0.0
+    ],
+    "max": [
+      0.41641,
+      1.02221,
+      2.05738
+    ]
+  },
+  "triangle_count": 372,
+  "material_count": 3,
+  "materials": [
+    "mat_ash",
+    "mat_bone",
+    "mat_nightmare_black"
+  ],
+  "anchors": [
+    {
+      "name": "head",
+      "type": "interaction"
+    }
+  ],
+  "files": {
+    "glb": "blender/generated/glb/hollow_deer_lowpoly.glb",
+    "blend": "blender/generated/blend/hollow_deer_lowpoly.blend",
+    "previews": {
+      "day": "blender/generated/previews/hollow_deer_lowpoly_preview_day.png",
+      "night": "blender/generated/previews/hollow_deer_lowpoly_preview_night.png",
+      "winter": "blender/generated/previews/hollow_deer_lowpoly_preview_winter.png",
+      "grayscale": "blender/generated/previews/hollow_deer_lowpoly_preview_grayscale.png"
+    }
+  },
+  "validation": {
+    "passed": true,
+    "checks": [
+      {
+        "name": "glb_exists",
+        "passed": true,
+        "detail": "blender/generated/glb/hollow_deer_lowpoly.glb (42740 bytes)"
+      },
+      {
+        "name": "blend_saved",
+        "passed": true,
+        "detail": "blender/generated/blend/hollow_deer_lowpoly.blend"
+      },
+      {
+        "name": "previews_exist",
+        "passed": true,
+        "detail": "all 4 previews rendered"
+      },
+      {
+        "name": "pivot_center_bottom",
+        "passed": true,
+        "detail": "minZ=0.0000 centerXY=(0.0000, 0.0000)"
+      },
+      {
+        "name": "footprint_fits",
+        "passed": true,
+        "detail": "asset 0.833x2.044x2.057 vs footprint 1.8x2.8x2.5"
+      },
+      {
+        "name": "triangle_budget",
+        "passed": true,
+        "detail": "372/1500 triangles"
+      },
+      {
+        "name": "material_budget",
+        "passed": true,
+        "detail": "3/3 materials: ['mat_ash', 'mat_bone', 'mat_nightmare_black']"
+      },
+      {
+        "name": "materials_in_library",
+        "passed": true,
+        "detail": "all in closed library"
+      },
+      {
+        "name": "anchors_present",
+        "passed": true,
+        "detail": "required=['head'] present=['head']"
+      },
+      {
+        "name": "collision_proxy",
+        "passed": true,
+        "detail": "hollow_deer_lowpoly_collision present"
+      }
+    ]
+  }
+}

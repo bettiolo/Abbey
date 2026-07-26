@@ -712,6 +712,7 @@ namespace Abbey.EditorTools
             flame.strength = config.sacredFlameStrength;
             flame.sacred = true;
             flame.fuelSeconds = -1f; // 0.1: the sacred flame does not burn out
+            RegisterSpriteRole(flameGO, "AbbeyFlame", "prop.sacredFlame");
 
             // The chained Black Hound at the tower base.
             var chainPos = towerPos + new Vector3(2f, 0f, -1.5f);
