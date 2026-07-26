@@ -46,6 +46,7 @@ namespace Abbey.Tests.EditMode
 
             AssertProjected("AbbeyOfAntlers", "abbey_cloister_t1");
             AssertProjected("StagBeneathAbbey", "stag_beneath_abbey_lowpoly");
+            AssertProjected("AbbeyFlame", "AbbeyFlame");
 
             GameObject forestFloor = Require("Map2_ForestFloor");
             SpriteRenderer forestSprite = SpriteProjectionFactory.GetSpriteRenderer(forestFloor);

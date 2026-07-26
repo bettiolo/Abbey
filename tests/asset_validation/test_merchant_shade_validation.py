@@ -25,10 +25,10 @@ def copy_curated(tmp_path: Path) -> Path:
 def test_committed_curated_subset_is_self_consistent() -> None:
     result = validator.validate(CURATED)
     assert result == {
-        "files": 48,
-        "slices": 381,
-        "mappedRoles": 78,
-        "unresolvedRoles": 6,
+        "files": 54,
+        "slices": 402,
+        "mappedRoles": 84,
+        "unresolvedRoles": 0,
     }
 
 
@@ -78,21 +78,24 @@ def test_contact_sheet_rejects_manifest_path_traversal(tmp_path: Path) -> None:
         validator.resolve_under(curated, "../../outside.png", "report abbeyPath")
 
 
-def test_unresolved_signature_roles_are_explicit_and_block_final_gate() -> None:
+def test_all_signature_roles_are_resolved_and_final_gate_is_clear() -> None:
     manifest = validator.load_manifest(CURATED)
-    assert manifest["finalVisualGateBlocked"] is True
-    unresolved = {item["role"]: item for item in manifest["unresolvedRoles"]}
-    assert set(unresolved) == {
-        "actor.nightmare.deadWorker",
-        "actor.nightmare.rootWalker",
-        "actor.nightmare.bellMimic",
-        "actor.nightmare.hollowDeer",
-        "actor.nightmare.charcoalDead",
-        "prop.sacredFlame",
+    assert manifest["finalVisualGateBlocked"] is False
+    assert manifest["finalVisualGateBlockReason"] == ""
+    assert manifest["unresolvedRoles"] == []
+
+    entries = {item["stableRoleId"]: item for item in manifest["entries"]}
+    expected = {
+        "role.actor.nightmare.deadWorker": "DeadWorker",
+        "role.actor.nightmare.rootWalker": "RootWalker",
+        "role.actor.nightmare.bellMimic": "BellMimic",
+        "role.actor.nightmare.hollowDeer": "HollowDeer",
+        "role.actor.nightmare.charcoalDead": "CharcoalDead",
+        "role.prop.sacredFlame": "AbbeyFlame",
     }
-    for item in unresolved.values():
-        assert item["reason"]
-        assert item["temporaryIdentityProxy"] is False
+    for role, asset_id in expected.items():
+        assert entries[role]["assetId"] == asset_id
+        assert entries[role]["temporaryIdentityProxy"] is False
 
 
 def test_signature_roles_use_spec_generated_identity_sheets() -> None:
@@ -102,13 +105,19 @@ def test_signature_roles_use_spec_generated_identity_sheets() -> None:
         for item in manifest["files"]
         if item.get("sourceKind") == "abbeySpecGenerated"
     }
-    entries = {item["roles"][0]: item for item in manifest["entries"]}
+    entries = {item["stableRoleId"]: item for item in manifest["entries"]}
     for role in (
-        "actor.bellkeeper",
-        "actor.blackHound",
-        "actor.stag",
-        "building.ruinedBellTower",
-        "prop.shipwreckHull",
+        "role.actor.bellkeeper",
+        "role.actor.blackHound",
+        "role.actor.stag",
+        "role.building.ruinedBellTower",
+        "role.prop.shipwreckHull",
+        "role.actor.nightmare.deadWorker",
+        "role.actor.nightmare.rootWalker",
+        "role.actor.nightmare.bellMimic",
+        "role.actor.nightmare.hollowDeer",
+        "role.actor.nightmare.charcoalDead",
+        "role.prop.sacredFlame",
     ):
         entry = entries[role]
         file_id = entry["defaultSprite"].split(":", 1)[0]

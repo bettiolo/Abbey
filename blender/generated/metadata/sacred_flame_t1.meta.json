@@ -1,0 +1,173 @@
+{
+  "id": "sacred_flame_t1",
+  "generated_at": "2026-07-26T15:33:26.923777+00:00",
+  "spec": {
+    "id": "sacred_flame_t1",
+    "type": "prop",
+    "theme": "abbey",
+    "footprint": {
+      "width": 1.25,
+      "depth": 1.25,
+      "height": 1.8
+    },
+    "style": {
+      "silhouette": "the abbey's eternal flame: a broad old-stone brazier with three tall interlocking tongues of sacred fire, a golden heart visible at its centre and four gold shrine marks around the rim",
+      "materials": [
+        "mat_old_stone",
+        "mat_flame",
+        "mat_sacred_gold"
+      ]
+    },
+    "required_parts": [
+      "brazier",
+      "rim",
+      "sacred_marks",
+      "triple_flame",
+      "golden_heart"
+    ],
+    "variants": [
+      "day",
+      "night",
+      "winter"
+    ],
+    "limits": {
+      "max_triangles": 800,
+      "max_materials": 3
+    },
+    "anchors": [
+      {
+        "name": "flame",
+        "type": "light"
+      }
+    ],
+    "sprite_projection": {
+      "enabled": true,
+      "filename": "abbey_generated_sacred_flame_t1.png",
+      "cell_size": 48,
+      "views": [
+        "south"
+      ],
+      "camera_padding": 1.22,
+      "color_steps": 12,
+      "outline_color": [
+        0.06,
+        0.05,
+        0.04
+      ],
+      "catalog_entries": [
+        {
+          "stable_role_id": "role.prop.sacredFlame",
+          "asset_id": "AbbeyFlame",
+          "roles": [
+            "prop.sacredFlame"
+          ],
+          "component_type_names": [
+            "Abbey.Light.LightSource"
+          ],
+          "visual_scale": 1.65,
+          "anchor_offset": [
+            0.0,
+            0.0
+          ],
+          "sort_offset": 18,
+          "phase_tint": false,
+          "authored_footprint": null
+        }
+      ]
+    },
+    "pivot": "center_bottom"
+  },
+  "dimensions": {
+    "width": 1.16,
+    "depth": 1.16,
+    "height": 1.69535,
+    "min": [
+      -0.58,
+      -0.58,
+      0.0
+    ],
+    "max": [
+      0.58,
+      0.58,
+      1.69535
+    ]
+  },
+  "triangle_count": 202,
+  "material_count": 3,
+  "materials": [
+    "mat_flame",
+    "mat_old_stone",
+    "mat_sacred_gold"
+  ],
+  "anchors": [
+    {
+      "name": "flame",
+      "type": "light"
+    }
+  ],
+  "files": {
+    "glb": "blender/generated/glb/sacred_flame_t1.glb",
+    "blend": "blender/generated/blend/sacred_flame_t1.blend",
+    "previews": {
+      "day": "blender/generated/previews/sacred_flame_t1_preview_day.png",
+      "night": "blender/generated/previews/sacred_flame_t1_preview_night.png",
+      "winter": "blender/generated/previews/sacred_flame_t1_preview_winter.png",
+      "grayscale": "blender/generated/previews/sacred_flame_t1_preview_grayscale.png"
+    }
+  },
+  "validation": {
+    "passed": true,
+    "checks": [
+      {
+        "name": "glb_exists",
+        "passed": true,
+        "detail": "blender/generated/glb/sacred_flame_t1.glb (27164 bytes)"
+      },
+      {
+        "name": "blend_saved",
+        "passed": true,
+        "detail": "blender/generated/blend/sacred_flame_t1.blend"
+      },
+      {
+        "name": "previews_exist",
+        "passed": true,
+        "detail": "all 4 previews rendered"
+      },
+      {
+        "name": "pivot_center_bottom",
+        "passed": true,
+        "detail": "minZ=0.0000 centerXY=(0.0000, 0.0000)"
+      },
+      {
+        "name": "footprint_fits",
+        "passed": true,
+        "detail": "asset 1.160x1.160x1.695 vs footprint 1.25x1.25x1.8"
+      },
+      {
+        "name": "triangle_budget",
+        "passed": true,
+        "detail": "202/800 triangles"
+      },
+      {
+        "name": "material_budget",
+        "passed": true,
+        "detail": "3/3 materials: ['mat_flame', 'mat_old_stone', 'mat_sacred_gold']"
+      },
+      {
+        "name": "materials_in_library",
+        "passed": true,
+        "detail": "all in closed library"
+      },
+      {
+        "name": "anchors_present",
+        "passed": true,
+        "detail": "required=['flame'] present=['flame']"
+      },
+      {
+        "name": "collision_proxy",
+        "passed": true,
+        "detail": "sacred_flame_t1_collision present"
+      }
+    ]
+  }
+}

@@ -24,8 +24,8 @@ namespace Abbey.Tests.EditMode
             List<string> errors = MiniWorldProjectionValidator.CollectManifestErrors(manifest);
 
             Assert.That(errors, Is.Empty, string.Join("\n", errors));
-            Assert.That(manifest.files, Has.Length.EqualTo(48));
-            Assert.That(manifest.entries, Has.Length.EqualTo(78));
+            Assert.That(manifest.files, Has.Length.EqualTo(54));
+            Assert.That(manifest.entries, Has.Length.EqualTo(84));
         }
 
         [Test]
@@ -112,6 +112,40 @@ namespace Abbey.Tests.EditMode
                 Assert.That(assetRolePairs.Add(actual.assetId + "\n" + actual.role), Is.True,
                     $"duplicate asset/role pair {actual.assetId} / {actual.role}");
             }
+        }
+
+        [Test]
+        public void FinalSignatureMappings_UseGeneratedIdentitySheets()
+        {
+            SpriteProjectionCatalog catalog = AssetDatabase.LoadAssetAtPath<SpriteProjectionCatalog>(
+                MiniWorldSpriteImporter.CatalogAssetPath);
+            Assert.That(catalog, Is.Not.Null);
+
+            string[] nightmares =
+            {
+                "DeadWorker",
+                "RootWalker",
+                "BellMimic",
+                "HollowDeer",
+                "CharcoalDead"
+            };
+            for (int i = 0; i < nightmares.Length; i++)
+            {
+                string assetId = nightmares[i];
+                Assert.That(catalog.TryGet(assetId, "actor.nightmare", out SpriteProjectionEntry entry),
+                    Is.True, assetId);
+                Assert.That(entry.role, Is.EqualTo("actor.nightmare"), assetId);
+                Assert.That(entry.HasDirectionalSprites, Is.True, assetId);
+                Assert.That(AssetDatabase.GetAssetPath(entry.sprite),
+                    Does.Contain("/AbbeyGeneratedIdentity/"), assetId);
+            }
+
+            Assert.That(catalog.TryGet("AbbeyFlame", "prop.sacredFlame",
+                out SpriteProjectionEntry flame), Is.True);
+            Assert.That(flame.role, Is.EqualTo("prop.sacredFlame"));
+            Assert.That(flame.participatesInPhaseTint, Is.False);
+            Assert.That(AssetDatabase.GetAssetPath(flame.sprite),
+                Does.Contain("/AbbeyGeneratedIdentity/"));
         }
 
         [Test]
