@@ -1,6 +1,6 @@
 {
   "id": "charcoal_kiln_t1",
-  "generated_at": "2026-07-05T15:10:28.235088+00:00",
+  "generated_at": "2026-07-26T14:40:19.774720+00:00",
   "spec": {
     "id": "charcoal_kiln_t1",
     "type": "building",
@@ -42,6 +42,44 @@
         "type": "work"
       }
     ],
+    "sprite_projection": {
+      "enabled": true,
+      "filename": "abbey_generated_charcoal_kiln_t1.png",
+      "cell_size": 48,
+      "views": [
+        "south"
+      ],
+      "camera_padding": 1.3,
+      "color_steps": 12,
+      "outline_color": [
+        0.06,
+        0.055,
+        0.05
+      ],
+      "catalog_entries": [
+        {
+          "stable_role_id": "role.building.charcoalKiln",
+          "asset_id": "charcoal_kiln_t1",
+          "roles": [
+            "building.charcoalKiln"
+          ],
+          "component_type_names": [
+            "Abbey.Economy.ProductionBuilding"
+          ],
+          "visual_scale": 2.3,
+          "anchor_offset": [
+            0.0,
+            0.0
+          ],
+          "sort_offset": 12,
+          "phase_tint": true,
+          "authored_footprint": [
+            2.0,
+            2.0
+          ]
+        }
+      ]
+    },
     "pivot": "center_bottom"
   },
   "dimensions": {

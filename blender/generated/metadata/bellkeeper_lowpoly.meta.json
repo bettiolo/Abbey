@@ -1,6 +1,6 @@
 {
   "id": "bellkeeper_lowpoly",
-  "generated_at": "2026-07-05T16:18:46.395883+00:00",
+  "generated_at": "2026-07-26T14:40:04.534278+00:00",
   "spec": {
     "id": "bellkeeper_lowpoly",
     "type": "character",
@@ -46,6 +46,44 @@
         "type": "bell"
       }
     ],
+    "sprite_projection": {
+      "enabled": true,
+      "filename": "abbey_generated_bellkeeper_lowpoly.png",
+      "cell_size": 32,
+      "views": [
+        "south",
+        "east",
+        "north",
+        "west"
+      ],
+      "camera_padding": 1.35,
+      "color_steps": 12,
+      "outline_color": [
+        0.08,
+        0.07,
+        0.065
+      ],
+      "catalog_entries": [
+        {
+          "stable_role_id": "role.actor.bellkeeper",
+          "asset_id": "bellkeeper_lowpoly",
+          "roles": [
+            "actor.bellkeeper"
+          ],
+          "component_type_names": [
+            "Abbey.Hero.BellkeeperController"
+          ],
+          "visual_scale": 2.3,
+          "anchor_offset": [
+            0.0,
+            0.0
+          ],
+          "sort_offset": 22,
+          "phase_tint": true,
+          "authored_footprint": null
+        }
+      ]
+    },
     "pivot": "center_bottom"
   },
   "dimensions": {

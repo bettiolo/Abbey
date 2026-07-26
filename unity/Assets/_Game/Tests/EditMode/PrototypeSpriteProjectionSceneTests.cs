@@ -96,10 +96,10 @@ namespace Abbey.Tests.EditMode
         }
 
         [Test]
-        public void SceneBuild_UnresolvedSignatureActorsKeepTheir3DFallback()
+        public void SceneBuild_SignatureActorsUseGeneratedIdentitySprites()
         {
-            AssertUnresolvedFallback("Bellkeeper", "bellkeeper_lowpoly");
-            AssertUnresolvedFallback("BlackHound", "black_hound_lowpoly");
+            AssertIdentityProjected("Bellkeeper", "bellkeeper_lowpoly");
+            AssertIdentityProjected("BlackHound", "black_hound_lowpoly");
         }
 
         [Test]
@@ -167,15 +167,17 @@ namespace Abbey.Tests.EditMode
                 $"{root.name} should hide its legacy 3D renderers in sprite mode");
         }
 
-        static void AssertUnresolvedFallback(string name, string expectedAssetId)
+        static void AssertIdentityProjected(string name, string expectedAssetId)
         {
             GameObject root = RequireRoot(name);
             SpriteRoleTag tag = root.GetComponent<SpriteRoleTag>();
             Assert.IsNotNull(tag);
             Assert.AreEqual(expectedAssetId, tag.AssetId);
-            Assert.IsNull(SpriteProjectionFactory.GetSpriteRenderer(root));
-            Assert.IsTrue(HasEnabledLegacyRenderer(root),
-                $"{name} must keep its honest 3D fallback until a signature sprite exists");
+            SpriteRenderer sprite = SpriteProjectionFactory.GetSpriteRenderer(root);
+            Assert.IsNotNull(sprite, $"{name} must use its generated identity sprite");
+            Assert.IsNotNull(sprite.sprite);
+            Assert.IsFalse(HasEnabledLegacyRenderer(root),
+                $"{name} must not mix its legacy 3D renderer into sprite mode");
         }
 
         static bool HasEnabledLegacyRenderer(GameObject root)

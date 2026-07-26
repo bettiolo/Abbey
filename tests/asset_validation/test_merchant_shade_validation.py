@@ -25,10 +25,10 @@ def copy_curated(tmp_path: Path) -> Path:
 def test_committed_curated_subset_is_self_consistent() -> None:
     result = validator.validate(CURATED)
     assert result == {
-        "files": 32,
-        "slices": 341,
-        "mappedRoles": 61,
-        "unresolvedRoles": 23,
+        "files": 48,
+        "slices": 381,
+        "mappedRoles": 78,
+        "unresolvedRoles": 6,
     }
 
 
@@ -82,6 +82,27 @@ def test_unresolved_signature_roles_are_explicit_and_block_final_gate() -> None:
     manifest = validator.load_manifest(CURATED)
     assert manifest["finalVisualGateBlocked"] is True
     unresolved = {item["role"]: item for item in manifest["unresolvedRoles"]}
+    assert set(unresolved) == {
+        "actor.nightmare.deadWorker",
+        "actor.nightmare.rootWalker",
+        "actor.nightmare.bellMimic",
+        "actor.nightmare.hollowDeer",
+        "actor.nightmare.charcoalDead",
+        "prop.sacredFlame",
+    }
+    for item in unresolved.values():
+        assert item["reason"]
+        assert item["temporaryIdentityProxy"] is False
+
+
+def test_signature_roles_use_spec_generated_identity_sheets() -> None:
+    manifest = validator.load_manifest(CURATED)
+    generated_files = {
+        item["fileId"]: item
+        for item in manifest["files"]
+        if item.get("sourceKind") == "abbeySpecGenerated"
+    }
+    entries = {item["roles"][0]: item for item in manifest["entries"]}
     for role in (
         "actor.bellkeeper",
         "actor.blackHound",
@@ -89,5 +110,39 @@ def test_unresolved_signature_roles_are_explicit_and_block_final_gate() -> None:
         "building.ruinedBellTower",
         "prop.shipwreckHull",
     ):
-        assert unresolved[role]["reason"]
-        assert unresolved[role]["temporaryIdentityProxy"] is False
+        entry = entries[role]
+        file_id = entry["defaultSprite"].split(":", 1)[0]
+        assert generated_files[file_id]["sourceSha256"]
+        assert generated_files[file_id]["sourceGlbPath"]
+        assert generated_files[file_id]["sourceMetadataPath"]
+        assert generated_files[file_id]["sourceGlbStructuralSha256"]
+        assert generated_files[file_id]["sourceRendererSha256"]
+        assert entry["temporaryIdentityProxy"] is False
+
+
+def test_structural_glb_fingerprint_ignores_exporter_noise(tmp_path: Path) -> None:
+    source = REPO_ROOT / "blender/generated/metadata/bellkeeper_lowpoly.meta.json"
+    original = json.loads(source.read_text(encoding="utf-8"))
+    rebuilt = json.loads(source.read_text(encoding="utf-8"))
+    rebuilt["generated_at"] = "2099-01-01T00:00:00+00:00"
+    glb_check = next(
+        check
+        for check in rebuilt["validation"]["checks"]
+        if check["name"] == "glb_exists"
+    )
+    glb_check["detail"] = (
+        "blender/generated/glb/bellkeeper_lowpoly.glb (64720 bytes)"
+    )
+    rebuilt_path = tmp_path / "rebuilt.meta.json"
+    rebuilt_path.write_text(json.dumps(rebuilt), encoding="utf-8")
+
+    assert validator.structural_metadata_sha256(source) == (
+        validator.structural_metadata_sha256(rebuilt_path)
+    )
+
+    original["triangle_count"] += 1
+    changed_path = tmp_path / "changed.meta.json"
+    changed_path.write_text(json.dumps(original), encoding="utf-8")
+    assert validator.structural_metadata_sha256(source) != (
+        validator.structural_metadata_sha256(changed_path)
+    )

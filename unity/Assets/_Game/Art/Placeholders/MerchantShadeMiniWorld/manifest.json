@@ -4021,6 +4021,942 @@
           }
         }
       ]
+    },
+    {
+      "fileId": "abbey_identity_abbey_cloister_t1",
+      "category": "abbeyIdentity",
+      "sourceKind": "abbeySpecGenerated",
+      "sourceAssetId": "abbey_cloister_t1",
+      "sourcePath": "blender/asset_specs/buildings/abbey_cloister_t1.json",
+      "sourceSha256": "43e356ccce050a432cee620626853bf5b0be3fe00a8041bc6899ee00f8760ce1",
+      "sourceGlbPath": "blender/generated/glb/abbey_cloister_t1.glb",
+      "sourceMetadataPath": "blender/generated/metadata/abbey_cloister_t1.meta.json",
+      "sourceGlbStructuralSha256": "6e084d7f6975658d7d24507ec4ae0c5c5d6e2d6719a007d868a62f2823ae64ba",
+      "sourceRendererPath": "blender/scripts/render_identity_sprites.py",
+      "sourceRendererSha256": "716ea39f99051b21f0ac6c2f722d021c8eeac227967b23086e8a5cba778a49e7",
+      "abbeyPath": "unity/Assets/_Game/Art/Placeholders/MerchantShadeMiniWorld/AbbeyGeneratedIdentity/abbey_generated_abbey_cloister_t1.png",
+      "sha256": "b5e1c0952bff6313fc464833e7fe8ffd3dc22d0475bf7c07bb9819ea242798c2",
+      "dimensions": {
+        "width": 64,
+        "height": 64
+      },
+      "expectedDimensions": {
+        "width": 64,
+        "height": 64
+      },
+      "sheetCellSize": {
+        "width": 64,
+        "height": 64
+      },
+      "importMode": "multiple",
+      "pixelsPerUnit": 64,
+      "orientation": "cameraFacingXZ",
+      "pivot": [
+        0.5,
+        0.0
+      ],
+      "slices": [
+        {
+          "name": "abbey_identity_abbey_cloister_t1_south",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 64,
+            "height": 64
+          }
+        }
+      ]
+    },
+    {
+      "fileId": "abbey_identity_bell_tower_ruined",
+      "category": "abbeyIdentity",
+      "sourceKind": "abbeySpecGenerated",
+      "sourceAssetId": "bell_tower_ruined",
+      "sourcePath": "blender/asset_specs/buildings/bell_tower_ruined.json",
+      "sourceSha256": "d23e7492e7c1fddd1579dade2d995dac820a15b19264abc45b4f852ba004fab2",
+      "sourceGlbPath": "blender/generated/glb/bell_tower_ruined.glb",
+      "sourceMetadataPath": "blender/generated/metadata/bell_tower_ruined.meta.json",
+      "sourceGlbStructuralSha256": "27482263a06ead81e26867c8238e7795df06261f1660af32c49a3a8bb210d54c",
+      "sourceRendererPath": "blender/scripts/render_identity_sprites.py",
+      "sourceRendererSha256": "716ea39f99051b21f0ac6c2f722d021c8eeac227967b23086e8a5cba778a49e7",
+      "abbeyPath": "unity/Assets/_Game/Art/Placeholders/MerchantShadeMiniWorld/AbbeyGeneratedIdentity/abbey_generated_bell_tower_ruined.png",
+      "sha256": "69d68c6e5dad2196d3f080d7c11a2d8b17d654740110fcfa78227b80dfe1de8f",
+      "dimensions": {
+        "width": 64,
+        "height": 64
+      },
+      "expectedDimensions": {
+        "width": 64,
+        "height": 64
+      },
+      "sheetCellSize": {
+        "width": 64,
+        "height": 64
+      },
+      "importMode": "multiple",
+      "pixelsPerUnit": 64,
+      "orientation": "cameraFacingXZ",
+      "pivot": [
+        0.5,
+        0.0
+      ],
+      "slices": [
+        {
+          "name": "abbey_identity_bell_tower_ruined_south",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 64,
+            "height": 64
+          }
+        }
+      ]
+    },
+    {
+      "fileId": "abbey_identity_bellkeeper_lowpoly",
+      "category": "abbeyIdentity",
+      "sourceKind": "abbeySpecGenerated",
+      "sourceAssetId": "bellkeeper_lowpoly",
+      "sourcePath": "blender/asset_specs/characters/bellkeeper_lowpoly.json",
+      "sourceSha256": "bdad86f16b6615ff4ed17ad5e24bc48c97e2f746a3d2829a3acc3c1a12466a0e",
+      "sourceGlbPath": "blender/generated/glb/bellkeeper_lowpoly.glb",
+      "sourceMetadataPath": "blender/generated/metadata/bellkeeper_lowpoly.meta.json",
+      "sourceGlbStructuralSha256": "108f93fd9e08388f42090f576b3160204614d65a28c62ff03f2b5ecdf5664bb0",
+      "sourceRendererPath": "blender/scripts/render_identity_sprites.py",
+      "sourceRendererSha256": "716ea39f99051b21f0ac6c2f722d021c8eeac227967b23086e8a5cba778a49e7",
+      "abbeyPath": "unity/Assets/_Game/Art/Placeholders/MerchantShadeMiniWorld/AbbeyGeneratedIdentity/abbey_generated_bellkeeper_lowpoly.png",
+      "sha256": "d4e1d8ea914e41b5d497c39c9a35ee9d87405508bbfee48b15fae0a1dcd28c35",
+      "dimensions": {
+        "width": 128,
+        "height": 32
+      },
+      "expectedDimensions": {
+        "width": 128,
+        "height": 32
+      },
+      "sheetCellSize": {
+        "width": 32,
+        "height": 32
+      },
+      "importMode": "multiple",
+      "pixelsPerUnit": 32,
+      "orientation": "cameraFacingXZ",
+      "pivot": [
+        0.5,
+        0.0
+      ],
+      "slices": [
+        {
+          "name": "abbey_identity_bellkeeper_lowpoly_south",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 32,
+            "height": 32
+          }
+        },
+        {
+          "name": "abbey_identity_bellkeeper_lowpoly_east",
+          "rect": {
+            "x": 32,
+            "y": 0,
+            "width": 32,
+            "height": 32
+          }
+        },
+        {
+          "name": "abbey_identity_bellkeeper_lowpoly_north",
+          "rect": {
+            "x": 64,
+            "y": 0,
+            "width": 32,
+            "height": 32
+          }
+        },
+        {
+          "name": "abbey_identity_bellkeeper_lowpoly_west",
+          "rect": {
+            "x": 96,
+            "y": 0,
+            "width": 32,
+            "height": 32
+          }
+        }
+      ]
+    },
+    {
+      "fileId": "abbey_identity_black_hound_lowpoly",
+      "category": "abbeyIdentity",
+      "sourceKind": "abbeySpecGenerated",
+      "sourceAssetId": "black_hound_lowpoly",
+      "sourcePath": "blender/asset_specs/beasts/black_hound_lowpoly.json",
+      "sourceSha256": "72eea5c05f70906269e66eb4d1a3b086d91a8a404f30a4cb7c5471ef07eb2a56",
+      "sourceGlbPath": "blender/generated/glb/black_hound_lowpoly.glb",
+      "sourceMetadataPath": "blender/generated/metadata/black_hound_lowpoly.meta.json",
+      "sourceGlbStructuralSha256": "49428f498adff630f896220df15386c37757a171d5a9cd928e6fbe3ee4fedeb1",
+      "sourceRendererPath": "blender/scripts/render_identity_sprites.py",
+      "sourceRendererSha256": "716ea39f99051b21f0ac6c2f722d021c8eeac227967b23086e8a5cba778a49e7",
+      "abbeyPath": "unity/Assets/_Game/Art/Placeholders/MerchantShadeMiniWorld/AbbeyGeneratedIdentity/abbey_generated_black_hound_lowpoly.png",
+      "sha256": "acc80b7c2cc531553bba04b8769d33f6ed3b283fbcfafb4e2e83ee61ae7f61eb",
+      "dimensions": {
+        "width": 128,
+        "height": 32
+      },
+      "expectedDimensions": {
+        "width": 128,
+        "height": 32
+      },
+      "sheetCellSize": {
+        "width": 32,
+        "height": 32
+      },
+      "importMode": "multiple",
+      "pixelsPerUnit": 32,
+      "orientation": "cameraFacingXZ",
+      "pivot": [
+        0.5,
+        0.0
+      ],
+      "slices": [
+        {
+          "name": "abbey_identity_black_hound_lowpoly_south",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 32,
+            "height": 32
+          }
+        },
+        {
+          "name": "abbey_identity_black_hound_lowpoly_east",
+          "rect": {
+            "x": 32,
+            "y": 0,
+            "width": 32,
+            "height": 32
+          }
+        },
+        {
+          "name": "abbey_identity_black_hound_lowpoly_north",
+          "rect": {
+            "x": 64,
+            "y": 0,
+            "width": 32,
+            "height": 32
+          }
+        },
+        {
+          "name": "abbey_identity_black_hound_lowpoly_west",
+          "rect": {
+            "x": 96,
+            "y": 0,
+            "width": 32,
+            "height": 32
+          }
+        }
+      ]
+    },
+    {
+      "fileId": "abbey_identity_campfire_t1",
+      "category": "abbeyIdentity",
+      "sourceKind": "abbeySpecGenerated",
+      "sourceAssetId": "campfire_t1",
+      "sourcePath": "blender/asset_specs/props/campfire_t1.json",
+      "sourceSha256": "904c24e8c9a58c2251d8bcca71383871e99cd0be53f8094904b053a5ddca9163",
+      "sourceGlbPath": "blender/generated/glb/campfire_t1.glb",
+      "sourceMetadataPath": "blender/generated/metadata/campfire_t1.meta.json",
+      "sourceGlbStructuralSha256": "118a310a6320696189ed644399dcb4dd1ad4d92482a886e0aa5eb7d6d14a0923",
+      "sourceRendererPath": "blender/scripts/render_identity_sprites.py",
+      "sourceRendererSha256": "716ea39f99051b21f0ac6c2f722d021c8eeac227967b23086e8a5cba778a49e7",
+      "abbeyPath": "unity/Assets/_Game/Art/Placeholders/MerchantShadeMiniWorld/AbbeyGeneratedIdentity/abbey_generated_campfire_t1.png",
+      "sha256": "0b72f6ad92df4dd88fb7aa4aedb2c7ea4d252dd00f1b32704d81003cc95424cb",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      },
+      "expectedDimensions": {
+        "width": 32,
+        "height": 32
+      },
+      "sheetCellSize": {
+        "width": 32,
+        "height": 32
+      },
+      "importMode": "multiple",
+      "pixelsPerUnit": 32,
+      "orientation": "cameraFacingXZ",
+      "pivot": [
+        0.5,
+        0.0
+      ],
+      "slices": [
+        {
+          "name": "abbey_identity_campfire_t1_south",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 32,
+            "height": 32
+          }
+        }
+      ]
+    },
+    {
+      "fileId": "abbey_identity_chain_hound_lowpoly",
+      "category": "abbeyIdentity",
+      "sourceKind": "abbeySpecGenerated",
+      "sourceAssetId": "chain_hound_lowpoly",
+      "sourcePath": "blender/asset_specs/characters/chain_hound_lowpoly.json",
+      "sourceSha256": "415feb2deee0330fd3ceafca125ab733902439b51dc77ef17acc06187cfc83fe",
+      "sourceGlbPath": "blender/generated/glb/chain_hound_lowpoly.glb",
+      "sourceMetadataPath": "blender/generated/metadata/chain_hound_lowpoly.meta.json",
+      "sourceGlbStructuralSha256": "23fd6f6362523b1cc10c6f02c8131a7dcea3e9c7b394c13f12fc9cfb4d20b3f3",
+      "sourceRendererPath": "blender/scripts/render_identity_sprites.py",
+      "sourceRendererSha256": "716ea39f99051b21f0ac6c2f722d021c8eeac227967b23086e8a5cba778a49e7",
+      "abbeyPath": "unity/Assets/_Game/Art/Placeholders/MerchantShadeMiniWorld/AbbeyGeneratedIdentity/abbey_generated_chain_hound_lowpoly.png",
+      "sha256": "588edcb459bb31846f9072e5b03c05753e2a2929db5a5ccd663a181f207b8bd0",
+      "dimensions": {
+        "width": 128,
+        "height": 32
+      },
+      "expectedDimensions": {
+        "width": 128,
+        "height": 32
+      },
+      "sheetCellSize": {
+        "width": 32,
+        "height": 32
+      },
+      "importMode": "multiple",
+      "pixelsPerUnit": 32,
+      "orientation": "cameraFacingXZ",
+      "pivot": [
+        0.5,
+        0.0
+      ],
+      "slices": [
+        {
+          "name": "abbey_identity_chain_hound_lowpoly_south",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 32,
+            "height": 32
+          }
+        },
+        {
+          "name": "abbey_identity_chain_hound_lowpoly_east",
+          "rect": {
+            "x": 32,
+            "y": 0,
+            "width": 32,
+            "height": 32
+          }
+        },
+        {
+          "name": "abbey_identity_chain_hound_lowpoly_north",
+          "rect": {
+            "x": 64,
+            "y": 0,
+            "width": 32,
+            "height": 32
+          }
+        },
+        {
+          "name": "abbey_identity_chain_hound_lowpoly_west",
+          "rect": {
+            "x": 96,
+            "y": 0,
+            "width": 32,
+            "height": 32
+          }
+        }
+      ]
+    },
+    {
+      "fileId": "abbey_identity_charcoal_kiln_t1",
+      "category": "abbeyIdentity",
+      "sourceKind": "abbeySpecGenerated",
+      "sourceAssetId": "charcoal_kiln_t1",
+      "sourcePath": "blender/asset_specs/buildings/charcoal_kiln_t1.json",
+      "sourceSha256": "ddae541d275b3c6f484904c1f2371498191ac67580b6d6cc505525237e27364a",
+      "sourceGlbPath": "blender/generated/glb/charcoal_kiln_t1.glb",
+      "sourceMetadataPath": "blender/generated/metadata/charcoal_kiln_t1.meta.json",
+      "sourceGlbStructuralSha256": "47ba1ca0426b9169ef248a64538bf78eac45738315c0c86b9a3d5f0dbbe84ba2",
+      "sourceRendererPath": "blender/scripts/render_identity_sprites.py",
+      "sourceRendererSha256": "716ea39f99051b21f0ac6c2f722d021c8eeac227967b23086e8a5cba778a49e7",
+      "abbeyPath": "unity/Assets/_Game/Art/Placeholders/MerchantShadeMiniWorld/AbbeyGeneratedIdentity/abbey_generated_charcoal_kiln_t1.png",
+      "sha256": "c8336d92604bb6e84fc40b253ba8f728101e7be0d1e02f82a2f7b240f4ef73c7",
+      "dimensions": {
+        "width": 48,
+        "height": 48
+      },
+      "expectedDimensions": {
+        "width": 48,
+        "height": 48
+      },
+      "sheetCellSize": {
+        "width": 48,
+        "height": 48
+      },
+      "importMode": "multiple",
+      "pixelsPerUnit": 48,
+      "orientation": "cameraFacingXZ",
+      "pivot": [
+        0.5,
+        0.0
+      ],
+      "slices": [
+        {
+          "name": "abbey_identity_charcoal_kiln_t1_south",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 48,
+            "height": 48
+          }
+        }
+      ]
+    },
+    {
+      "fileId": "abbey_identity_drowned_sailor_lowpoly",
+      "category": "abbeyIdentity",
+      "sourceKind": "abbeySpecGenerated",
+      "sourceAssetId": "drowned_sailor_lowpoly",
+      "sourcePath": "blender/asset_specs/characters/drowned_sailor_lowpoly.json",
+      "sourceSha256": "76f57dc6d943d53a645263f9ccced17305089e603750ea30df32bb1008c83d98",
+      "sourceGlbPath": "blender/generated/glb/drowned_sailor_lowpoly.glb",
+      "sourceMetadataPath": "blender/generated/metadata/drowned_sailor_lowpoly.meta.json",
+      "sourceGlbStructuralSha256": "415bcc676b7d1ec7b0d7d94d96aa915f52fdc44b9bfac826743fa7c5b75dcf9a",
+      "sourceRendererPath": "blender/scripts/render_identity_sprites.py",
+      "sourceRendererSha256": "716ea39f99051b21f0ac6c2f722d021c8eeac227967b23086e8a5cba778a49e7",
+      "abbeyPath": "unity/Assets/_Game/Art/Placeholders/MerchantShadeMiniWorld/AbbeyGeneratedIdentity/abbey_generated_drowned_sailor_lowpoly.png",
+      "sha256": "552ce2425041db4a8923a7b04ad935bdb5178eb5607ad80275a91c14010496fe",
+      "dimensions": {
+        "width": 128,
+        "height": 32
+      },
+      "expectedDimensions": {
+        "width": 128,
+        "height": 32
+      },
+      "sheetCellSize": {
+        "width": 32,
+        "height": 32
+      },
+      "importMode": "multiple",
+      "pixelsPerUnit": 32,
+      "orientation": "cameraFacingXZ",
+      "pivot": [
+        0.5,
+        0.0
+      ],
+      "slices": [
+        {
+          "name": "abbey_identity_drowned_sailor_lowpoly_south",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 32,
+            "height": 32
+          }
+        },
+        {
+          "name": "abbey_identity_drowned_sailor_lowpoly_east",
+          "rect": {
+            "x": 32,
+            "y": 0,
+            "width": 32,
+            "height": 32
+          }
+        },
+        {
+          "name": "abbey_identity_drowned_sailor_lowpoly_north",
+          "rect": {
+            "x": 64,
+            "y": 0,
+            "width": 32,
+            "height": 32
+          }
+        },
+        {
+          "name": "abbey_identity_drowned_sailor_lowpoly_west",
+          "rect": {
+            "x": 96,
+            "y": 0,
+            "width": 32,
+            "height": 32
+          }
+        }
+      ]
+    },
+    {
+      "fileId": "abbey_identity_faceless_saint_lowpoly",
+      "category": "abbeyIdentity",
+      "sourceKind": "abbeySpecGenerated",
+      "sourceAssetId": "faceless_saint_lowpoly",
+      "sourcePath": "blender/asset_specs/characters/faceless_saint_lowpoly.json",
+      "sourceSha256": "fbc33fe0d2d5be2bfa4c5ff5f308903018068f116d6453371d91d7f69197777b",
+      "sourceGlbPath": "blender/generated/glb/faceless_saint_lowpoly.glb",
+      "sourceMetadataPath": "blender/generated/metadata/faceless_saint_lowpoly.meta.json",
+      "sourceGlbStructuralSha256": "85686637e07f3b1f168ad9dd8333cce356a580f4dbb4cdc103d738ee11e2ac44",
+      "sourceRendererPath": "blender/scripts/render_identity_sprites.py",
+      "sourceRendererSha256": "716ea39f99051b21f0ac6c2f722d021c8eeac227967b23086e8a5cba778a49e7",
+      "abbeyPath": "unity/Assets/_Game/Art/Placeholders/MerchantShadeMiniWorld/AbbeyGeneratedIdentity/abbey_generated_faceless_saint_lowpoly.png",
+      "sha256": "da643c8f7a56e14418987a7b72cac6200eb29a9bd3b2a946766d6337ff2a94ed",
+      "dimensions": {
+        "width": 192,
+        "height": 48
+      },
+      "expectedDimensions": {
+        "width": 192,
+        "height": 48
+      },
+      "sheetCellSize": {
+        "width": 48,
+        "height": 48
+      },
+      "importMode": "multiple",
+      "pixelsPerUnit": 48,
+      "orientation": "cameraFacingXZ",
+      "pivot": [
+        0.5,
+        0.0
+      ],
+      "slices": [
+        {
+          "name": "abbey_identity_faceless_saint_lowpoly_south",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 48,
+            "height": 48
+          }
+        },
+        {
+          "name": "abbey_identity_faceless_saint_lowpoly_east",
+          "rect": {
+            "x": 48,
+            "y": 0,
+            "width": 48,
+            "height": 48
+          }
+        },
+        {
+          "name": "abbey_identity_faceless_saint_lowpoly_north",
+          "rect": {
+            "x": 96,
+            "y": 0,
+            "width": 48,
+            "height": 48
+          }
+        },
+        {
+          "name": "abbey_identity_faceless_saint_lowpoly_west",
+          "rect": {
+            "x": 144,
+            "y": 0,
+            "width": 48,
+            "height": 48
+          }
+        }
+      ]
+    },
+    {
+      "fileId": "abbey_identity_hound_chain",
+      "category": "abbeyIdentity",
+      "sourceKind": "abbeySpecGenerated",
+      "sourceAssetId": "hound_chain",
+      "sourcePath": "blender/asset_specs/props/hound_chain.json",
+      "sourceSha256": "acb5d165580cf06fbe2bd3ae11c53aa57e53a3f0d097b766e3459bd31cf8222b",
+      "sourceGlbPath": "blender/generated/glb/hound_chain.glb",
+      "sourceMetadataPath": "blender/generated/metadata/hound_chain.meta.json",
+      "sourceGlbStructuralSha256": "f737d508a50887167e736ac7fa44ea22769e691fd5f7395dfb088659b76d536f",
+      "sourceRendererPath": "blender/scripts/render_identity_sprites.py",
+      "sourceRendererSha256": "716ea39f99051b21f0ac6c2f722d021c8eeac227967b23086e8a5cba778a49e7",
+      "abbeyPath": "unity/Assets/_Game/Art/Placeholders/MerchantShadeMiniWorld/AbbeyGeneratedIdentity/abbey_generated_hound_chain.png",
+      "sha256": "5fc834e5da0bd745fb56e6514a57b54ddc4fe4df46f14644b56365df95065a5f",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      },
+      "expectedDimensions": {
+        "width": 32,
+        "height": 32
+      },
+      "sheetCellSize": {
+        "width": 32,
+        "height": 32
+      },
+      "importMode": "multiple",
+      "pixelsPerUnit": 32,
+      "orientation": "cameraFacingXZ",
+      "pivot": [
+        0.5,
+        0.0
+      ],
+      "slices": [
+        {
+          "name": "abbey_identity_hound_chain_south",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 32,
+            "height": 32
+          }
+        }
+      ]
+    },
+    {
+      "fileId": "abbey_identity_lantern_moth_lowpoly",
+      "category": "abbeyIdentity",
+      "sourceKind": "abbeySpecGenerated",
+      "sourceAssetId": "lantern_moth_lowpoly",
+      "sourcePath": "blender/asset_specs/characters/lantern_moth_lowpoly.json",
+      "sourceSha256": "a65a2137414355ef8366bf1fdd70e1f1c5c759547d5d98059e33e576e1094bd3",
+      "sourceGlbPath": "blender/generated/glb/lantern_moth_lowpoly.glb",
+      "sourceMetadataPath": "blender/generated/metadata/lantern_moth_lowpoly.meta.json",
+      "sourceGlbStructuralSha256": "e713c92fa21b0b363012a5053f1608f164719ca2e32caf8fdfab3c0affc2695e",
+      "sourceRendererPath": "blender/scripts/render_identity_sprites.py",
+      "sourceRendererSha256": "716ea39f99051b21f0ac6c2f722d021c8eeac227967b23086e8a5cba778a49e7",
+      "abbeyPath": "unity/Assets/_Game/Art/Placeholders/MerchantShadeMiniWorld/AbbeyGeneratedIdentity/abbey_generated_lantern_moth_lowpoly.png",
+      "sha256": "f507e9c240e431762adb6d4e856621637966f236db882be805f6f0a28d6899eb",
+      "dimensions": {
+        "width": 128,
+        "height": 32
+      },
+      "expectedDimensions": {
+        "width": 128,
+        "height": 32
+      },
+      "sheetCellSize": {
+        "width": 32,
+        "height": 32
+      },
+      "importMode": "multiple",
+      "pixelsPerUnit": 32,
+      "orientation": "cameraFacingXZ",
+      "pivot": [
+        0.5,
+        0.0
+      ],
+      "slices": [
+        {
+          "name": "abbey_identity_lantern_moth_lowpoly_south",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 32,
+            "height": 32
+          }
+        },
+        {
+          "name": "abbey_identity_lantern_moth_lowpoly_east",
+          "rect": {
+            "x": 32,
+            "y": 0,
+            "width": 32,
+            "height": 32
+          }
+        },
+        {
+          "name": "abbey_identity_lantern_moth_lowpoly_north",
+          "rect": {
+            "x": 64,
+            "y": 0,
+            "width": 32,
+            "height": 32
+          }
+        },
+        {
+          "name": "abbey_identity_lantern_moth_lowpoly_west",
+          "rect": {
+            "x": 96,
+            "y": 0,
+            "width": 32,
+            "height": 32
+          }
+        }
+      ]
+    },
+    {
+      "fileId": "abbey_identity_lantern_post_t1",
+      "category": "abbeyIdentity",
+      "sourceKind": "abbeySpecGenerated",
+      "sourceAssetId": "lantern_post_t1",
+      "sourcePath": "blender/asset_specs/props/lantern_post_t1.json",
+      "sourceSha256": "cc43280baa94130814675d7197d825d1a1ccb87254b26effeec0bc9da938380a",
+      "sourceGlbPath": "blender/generated/glb/lantern_post_t1.glb",
+      "sourceMetadataPath": "blender/generated/metadata/lantern_post_t1.meta.json",
+      "sourceGlbStructuralSha256": "15f1f539d6d231bd187e0e534029d200b2c1af2b3088bf6df587c076b781cdbe",
+      "sourceRendererPath": "blender/scripts/render_identity_sprites.py",
+      "sourceRendererSha256": "716ea39f99051b21f0ac6c2f722d021c8eeac227967b23086e8a5cba778a49e7",
+      "abbeyPath": "unity/Assets/_Game/Art/Placeholders/MerchantShadeMiniWorld/AbbeyGeneratedIdentity/abbey_generated_lantern_post_t1.png",
+      "sha256": "a3cd0f391ee8d64b30cc76b1f73289eb280f3bfcc7dbdb92bce4578f6e672fb6",
+      "dimensions": {
+        "width": 48,
+        "height": 48
+      },
+      "expectedDimensions": {
+        "width": 48,
+        "height": 48
+      },
+      "sheetCellSize": {
+        "width": 48,
+        "height": 48
+      },
+      "importMode": "multiple",
+      "pixelsPerUnit": 48,
+      "orientation": "cameraFacingXZ",
+      "pivot": [
+        0.5,
+        0.0
+      ],
+      "slices": [
+        {
+          "name": "abbey_identity_lantern_post_t1_south",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 48,
+            "height": 48
+          }
+        }
+      ]
+    },
+    {
+      "fileId": "abbey_identity_pale_hound_lowpoly",
+      "category": "abbeyIdentity",
+      "sourceKind": "abbeySpecGenerated",
+      "sourceAssetId": "pale_hound_lowpoly",
+      "sourcePath": "blender/asset_specs/characters/pale_hound_lowpoly.json",
+      "sourceSha256": "fdaa875017b8a9308fc7fe0cea8c9a700ef0cfd0458783c58c2bbfc9289d024d",
+      "sourceGlbPath": "blender/generated/glb/pale_hound_lowpoly.glb",
+      "sourceMetadataPath": "blender/generated/metadata/pale_hound_lowpoly.meta.json",
+      "sourceGlbStructuralSha256": "3c7a7edcd5387e3edb8bc9670c310f70c8cdf3d259cdff178f899b84b9b46343",
+      "sourceRendererPath": "blender/scripts/render_identity_sprites.py",
+      "sourceRendererSha256": "716ea39f99051b21f0ac6c2f722d021c8eeac227967b23086e8a5cba778a49e7",
+      "abbeyPath": "unity/Assets/_Game/Art/Placeholders/MerchantShadeMiniWorld/AbbeyGeneratedIdentity/abbey_generated_pale_hound_lowpoly.png",
+      "sha256": "e3cbdd217401aa57788fed0c4015f92558afcdc1377677176def5df79859cc7c",
+      "dimensions": {
+        "width": 128,
+        "height": 32
+      },
+      "expectedDimensions": {
+        "width": 128,
+        "height": 32
+      },
+      "sheetCellSize": {
+        "width": 32,
+        "height": 32
+      },
+      "importMode": "multiple",
+      "pixelsPerUnit": 32,
+      "orientation": "cameraFacingXZ",
+      "pivot": [
+        0.5,
+        0.0
+      ],
+      "slices": [
+        {
+          "name": "abbey_identity_pale_hound_lowpoly_south",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 32,
+            "height": 32
+          }
+        },
+        {
+          "name": "abbey_identity_pale_hound_lowpoly_east",
+          "rect": {
+            "x": 32,
+            "y": 0,
+            "width": 32,
+            "height": 32
+          }
+        },
+        {
+          "name": "abbey_identity_pale_hound_lowpoly_north",
+          "rect": {
+            "x": 64,
+            "y": 0,
+            "width": 32,
+            "height": 32
+          }
+        },
+        {
+          "name": "abbey_identity_pale_hound_lowpoly_west",
+          "rect": {
+            "x": 96,
+            "y": 0,
+            "width": 32,
+            "height": 32
+          }
+        }
+      ]
+    },
+    {
+      "fileId": "abbey_identity_shipwreck_barrel",
+      "category": "abbeyIdentity",
+      "sourceKind": "abbeySpecGenerated",
+      "sourceAssetId": "shipwreck_barrel",
+      "sourcePath": "blender/asset_specs/props/shipwreck_barrel.json",
+      "sourceSha256": "cbdc95414e0c371a4d5f5a91cac1b6ffa02ef7b64d65ceae40ba3e4283168e61",
+      "sourceGlbPath": "blender/generated/glb/shipwreck_barrel.glb",
+      "sourceMetadataPath": "blender/generated/metadata/shipwreck_barrel.meta.json",
+      "sourceGlbStructuralSha256": "c5ffbbb0d229f6584eaffe5645293cda9748d2e6ed7a221003aecdcaf5a54dec",
+      "sourceRendererPath": "blender/scripts/render_identity_sprites.py",
+      "sourceRendererSha256": "716ea39f99051b21f0ac6c2f722d021c8eeac227967b23086e8a5cba778a49e7",
+      "abbeyPath": "unity/Assets/_Game/Art/Placeholders/MerchantShadeMiniWorld/AbbeyGeneratedIdentity/abbey_generated_shipwreck_barrel.png",
+      "sha256": "f9f308cd9857c446e21b736cf47045c29f1318a51f4717776cfce2b7758ad10f",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      },
+      "expectedDimensions": {
+        "width": 32,
+        "height": 32
+      },
+      "sheetCellSize": {
+        "width": 32,
+        "height": 32
+      },
+      "importMode": "multiple",
+      "pixelsPerUnit": 32,
+      "orientation": "cameraFacingXZ",
+      "pivot": [
+        0.5,
+        0.0
+      ],
+      "slices": [
+        {
+          "name": "abbey_identity_shipwreck_barrel_south",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 32,
+            "height": 32
+          }
+        }
+      ]
+    },
+    {
+      "fileId": "abbey_identity_shipwreck_hull",
+      "category": "abbeyIdentity",
+      "sourceKind": "abbeySpecGenerated",
+      "sourceAssetId": "shipwreck_hull",
+      "sourcePath": "blender/asset_specs/terrain/shipwreck_hull.json",
+      "sourceSha256": "5addbc07436225fc65aadb5eee9645af82abaccca5c3115e93c57b89473382e3",
+      "sourceGlbPath": "blender/generated/glb/shipwreck_hull.glb",
+      "sourceMetadataPath": "blender/generated/metadata/shipwreck_hull.meta.json",
+      "sourceGlbStructuralSha256": "bbf26e3858981f68d2b6eeceaceeb697185caa1d5e5ab1f1658d63a2884db288",
+      "sourceRendererPath": "blender/scripts/render_identity_sprites.py",
+      "sourceRendererSha256": "716ea39f99051b21f0ac6c2f722d021c8eeac227967b23086e8a5cba778a49e7",
+      "abbeyPath": "unity/Assets/_Game/Art/Placeholders/MerchantShadeMiniWorld/AbbeyGeneratedIdentity/abbey_generated_shipwreck_hull.png",
+      "sha256": "11087e801816c7d8e0f93a7c614b3f8b7057782a490d3252b0cd1082987eba4b",
+      "dimensions": {
+        "width": 64,
+        "height": 64
+      },
+      "expectedDimensions": {
+        "width": 64,
+        "height": 64
+      },
+      "sheetCellSize": {
+        "width": 64,
+        "height": 64
+      },
+      "importMode": "multiple",
+      "pixelsPerUnit": 64,
+      "orientation": "cameraFacingXZ",
+      "pivot": [
+        0.5,
+        0.0
+      ],
+      "slices": [
+        {
+          "name": "abbey_identity_shipwreck_hull_south",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 64,
+            "height": 64
+          }
+        }
+      ]
+    },
+    {
+      "fileId": "abbey_identity_stag_beneath_abbey_lowpoly",
+      "category": "abbeyIdentity",
+      "sourceKind": "abbeySpecGenerated",
+      "sourceAssetId": "stag_beneath_abbey_lowpoly",
+      "sourcePath": "blender/asset_specs/beasts/stag_beneath_abbey_lowpoly.json",
+      "sourceSha256": "d287662baf2069dc23da020536f6bf4aedd6a069a856104e592cab8dab91319e",
+      "sourceGlbPath": "blender/generated/glb/stag_beneath_abbey_lowpoly.glb",
+      "sourceMetadataPath": "blender/generated/metadata/stag_beneath_abbey_lowpoly.meta.json",
+      "sourceGlbStructuralSha256": "088ded907795014964e247acae2e53cd6127b8a473f7b551d89a0ae59b910fdd",
+      "sourceRendererPath": "blender/scripts/render_identity_sprites.py",
+      "sourceRendererSha256": "716ea39f99051b21f0ac6c2f722d021c8eeac227967b23086e8a5cba778a49e7",
+      "abbeyPath": "unity/Assets/_Game/Art/Placeholders/MerchantShadeMiniWorld/AbbeyGeneratedIdentity/abbey_generated_stag_beneath_abbey_lowpoly.png",
+      "sha256": "13505e8c2a066a65c4f87cb56ed7105d8a8f2776fc1241497fe6762f51db8486",
+      "dimensions": {
+        "width": 192,
+        "height": 48
+      },
+      "expectedDimensions": {
+        "width": 192,
+        "height": 48
+      },
+      "sheetCellSize": {
+        "width": 48,
+        "height": 48
+      },
+      "importMode": "multiple",
+      "pixelsPerUnit": 48,
+      "orientation": "cameraFacingXZ",
+      "pivot": [
+        0.5,
+        0.0
+      ],
+      "slices": [
+        {
+          "name": "abbey_identity_stag_beneath_abbey_lowpoly_south",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 48,
+            "height": 48
+          }
+        },
+        {
+          "name": "abbey_identity_stag_beneath_abbey_lowpoly_east",
+          "rect": {
+            "x": 48,
+            "y": 0,
+            "width": 48,
+            "height": 48
+          }
+        },
+        {
+          "name": "abbey_identity_stag_beneath_abbey_lowpoly_north",
+          "rect": {
+            "x": 96,
+            "y": 0,
+            "width": 48,
+            "height": 48
+          }
+        },
+        {
+          "name": "abbey_identity_stag_beneath_abbey_lowpoly_west",
+          "rect": {
+            "x": 144,
+            "y": 0,
+            "width": 48,
+            "height": 48
+          }
+        }
+      ]
     }
   ],
   "entries": [
@@ -5627,349 +6563,633 @@
       "notes": "Antlered frost monster is a temporary antler-wraith proxy."
     },
     {
-        "stableRoleId": "role.building.abbey_wall",
-        "assetId": "abbey_wall_broken",
-        "roles": [
-          "building.abbeyWall"
-        ],
-        "componentTypeNames": [],
-        "defaultSprite": "building_tower:building_tower_r02_c00",
-        "directionalSprites": {},
-        "walkAnimation": null,
-        "visualScale": 2.5,
-        "anchorOffset": [
-          0,
-          0
-        ],
-        "roleSortOffset": 14,
-        "phaseTint": true,
-        "authoredFootprint": [
-          5,
-          1
-        ],
-        "fallbackPolicy": "reversible3D",
-        "temporaryIdentityProxy": true,
-        "notes": "Generic fortified wall segment; exact broken-stone identity remains unapproved."
+      "stableRoleId": "role.building.abbey_wall",
+      "assetId": "abbey_wall_broken",
+      "roles": [
+        "building.abbeyWall"
+      ],
+      "componentTypeNames": [],
+      "defaultSprite": "building_tower:building_tower_r02_c00",
+      "directionalSprites": {},
+      "walkAnimation": null,
+      "visualScale": 2.5,
+      "anchorOffset": [
+        0,
+        0
+      ],
+      "roleSortOffset": 14,
+      "phaseTint": true,
+      "authoredFootprint": [
+        5,
+        1
+      ],
+      "fallbackPolicy": "reversible3D",
+      "temporaryIdentityProxy": true,
+      "notes": "Generic fortified wall segment; exact broken-stone identity remains unapproved."
+    },
+    {
+      "stableRoleId": "role.nature.forest_cluster_01",
+      "assetId": "forest_cluster_01",
+      "roles": [
+        "nature.forestCluster"
+      ],
+      "componentTypeNames": [],
+      "defaultSprite": "nature_trees:nature_trees_r00_c01",
+      "directionalSprites": {},
+      "walkAnimation": null,
+      "visualScale": 2.8,
+      "anchorOffset": [
+        0,
+        0
+      ],
+      "roleSortOffset": 7,
+      "phaseTint": true,
+      "authoredFootprint": null,
+      "fallbackPolicy": "reversible3D",
+      "temporaryIdentityProxy": true,
+      "notes": "The scene builder must compose a deterministic cluster from catalog variants."
+    },
+    {
+      "stableRoleId": "role.nature.forest_cluster_02",
+      "assetId": "forest_cluster_02",
+      "roles": [
+        "nature.forestCluster"
+      ],
+      "componentTypeNames": [],
+      "defaultSprite": "nature_pines:nature_pines_r00_c01",
+      "directionalSprites": {},
+      "walkAnimation": null,
+      "visualScale": 2.8,
+      "anchorOffset": [
+        0,
+        0
+      ],
+      "roleSortOffset": 7,
+      "phaseTint": true,
+      "authoredFootprint": null,
+      "fallbackPolicy": "reversible3D",
+      "temporaryIdentityProxy": true,
+      "notes": "The scene builder must compose a deterministic cluster from catalog variants."
+    },
+    {
+      "stableRoleId": "role.dynamic.carried_resource",
+      "assetId": "carried_resource",
+      "roles": [
+        "dynamic.carriedResource"
+      ],
+      "componentTypeNames": [],
+      "defaultSprite": "prop_chests:prop_chests_r00_c00",
+      "directionalSprites": {},
+      "walkAnimation": null,
+      "visualScale": 0.7,
+      "anchorOffset": [
+        0.3,
+        0.8
+      ],
+      "roleSortOffset": 30,
+      "phaseTint": true,
+      "authoredFootprint": null,
+      "fallbackPolicy": "reversible3D",
+      "temporaryIdentityProxy": true,
+      "notes": "Generic carried-goods proxy; runtime role selects it independently from the carrier."
+    },
+    {
+      "stableRoleId": "role.dynamic.construction_site",
+      "assetId": "construction_site",
+      "roles": [
+        "dynamic.constructionSite"
+      ],
+      "componentTypeNames": [
+        "Abbey.Buildings.ConstructionSite"
+      ],
+      "defaultSprite": "building_huts:building_huts_r00_c00",
+      "directionalSprites": {},
+      "walkAnimation": null,
+      "visualScale": 1.8,
+      "anchorOffset": [
+        0,
+        0
+      ],
+      "roleSortOffset": 9,
+      "phaseTint": true,
+      "authoredFootprint": null,
+      "fallbackPolicy": "reversible3D",
+      "temporaryIdentityProxy": true,
+      "notes": "Early-stage shelter frame; final building role replaces it on completion."
+    },
+    {
+      "stableRoleId": "role.dynamic.salvage_site",
+      "assetId": "salvage_site",
+      "roles": [
+        "dynamic.salvageSite"
+      ],
+      "componentTypeNames": [
+        "Abbey.Economy.SalvageSite"
+      ],
+      "defaultSprite": "prop_chests:prop_chests_r00_c01",
+      "directionalSprites": {},
+      "walkAnimation": null,
+      "visualScale": 1.1,
+      "anchorOffset": [
+        0,
+        0
+      ],
+      "roleSortOffset": 6,
+      "phaseTint": true,
+      "authoredFootprint": null,
+      "fallbackPolicy": "reversible3D",
+      "temporaryIdentityProxy": false
+    },
+    {
+      "stableRoleId": "role.dynamic.restoration_node",
+      "assetId": "restoration_node",
+      "roles": [
+        "dynamic.restorationNode"
+      ],
+      "componentTypeNames": [
+        "Abbey.Buildings.RestorationNode"
+      ],
+      "defaultSprite": "building_tower:building_tower_r02_c00",
+      "directionalSprites": {},
+      "walkAnimation": null,
+      "visualScale": 2.2,
+      "anchorOffset": [
+        0,
+        0
+      ],
+      "roleSortOffset": 13,
+      "phaseTint": true,
+      "authoredFootprint": null,
+      "fallbackPolicy": "reversible3D",
+      "temporaryIdentityProxy": true,
+      "notes": "Generic repair marker; the completed identity asset remains role-specific."
+    },
+    {
+      "stableRoleId": "role.dynamic.night_objective",
+      "assetId": "night_objective",
+      "roles": [
+        "dynamic.nightObjective"
+      ],
+      "componentTypeNames": [],
+      "defaultSprite": "ui_highlights:ui_highlights_r00_c04",
+      "directionalSprites": {},
+      "walkAnimation": null,
+      "visualScale": 1,
+      "anchorOffset": [
+        0,
+        0
+      ],
+      "roleSortOffset": 90,
+      "phaseTint": false,
+      "authoredFootprint": null,
+      "fallbackPolicy": "reversible3D",
+      "temporaryIdentityProxy": false
+    },
+    {
+      "stableRoleId": "role.actor.bellkeeper",
+      "assetId": "bellkeeper_lowpoly",
+      "roles": [
+        "actor.bellkeeper"
+      ],
+      "componentTypeNames": [
+        "Abbey.Hero.BellkeeperController"
+      ],
+      "defaultSprite": "abbey_identity_bellkeeper_lowpoly:abbey_identity_bellkeeper_lowpoly_south",
+      "directionalSprites": {
+        "south": "abbey_identity_bellkeeper_lowpoly:abbey_identity_bellkeeper_lowpoly_south",
+        "east": "abbey_identity_bellkeeper_lowpoly:abbey_identity_bellkeeper_lowpoly_east",
+        "north": "abbey_identity_bellkeeper_lowpoly:abbey_identity_bellkeeper_lowpoly_north",
+        "west": "abbey_identity_bellkeeper_lowpoly:abbey_identity_bellkeeper_lowpoly_west"
       },
-      {
-        "stableRoleId": "role.nature.forest_cluster_01",
-        "assetId": "forest_cluster_01",
-        "roles": [
-          "nature.forestCluster"
-        ],
-        "componentTypeNames": [],
-        "defaultSprite": "nature_trees:nature_trees_r00_c01",
-        "directionalSprites": {},
-        "walkAnimation": null,
-        "visualScale": 2.8,
-        "anchorOffset": [
-          0,
-          0
-        ],
-        "roleSortOffset": 7,
-        "phaseTint": true,
-        "authoredFootprint": null,
-        "fallbackPolicy": "reversible3D",
-        "temporaryIdentityProxy": true,
-        "notes": "The scene builder must compose a deterministic cluster from catalog variants."
+      "walkAnimation": null,
+      "visualScale": 2.3,
+      "anchorOffset": [
+        0.0,
+        0.0
+      ],
+      "roleSortOffset": 22,
+      "phaseTint": true,
+      "authoredFootprint": null,
+      "fallbackPolicy": "reversible3D",
+      "temporaryIdentityProxy": false
+    },
+    {
+      "stableRoleId": "role.actor.blackHound",
+      "assetId": "black_hound_lowpoly",
+      "roles": [
+        "actor.blackHound"
+      ],
+      "componentTypeNames": [
+        "Abbey.Beast.HoundController"
+      ],
+      "defaultSprite": "abbey_identity_black_hound_lowpoly:abbey_identity_black_hound_lowpoly_south",
+      "directionalSprites": {
+        "south": "abbey_identity_black_hound_lowpoly:abbey_identity_black_hound_lowpoly_south",
+        "east": "abbey_identity_black_hound_lowpoly:abbey_identity_black_hound_lowpoly_east",
+        "north": "abbey_identity_black_hound_lowpoly:abbey_identity_black_hound_lowpoly_north",
+        "west": "abbey_identity_black_hound_lowpoly:abbey_identity_black_hound_lowpoly_west"
       },
-      {
-        "stableRoleId": "role.nature.forest_cluster_02",
-        "assetId": "forest_cluster_02",
-        "roles": [
-          "nature.forestCluster"
-        ],
-        "componentTypeNames": [],
-        "defaultSprite": "nature_pines:nature_pines_r00_c01",
-        "directionalSprites": {},
-        "walkAnimation": null,
-        "visualScale": 2.8,
-        "anchorOffset": [
-          0,
-          0
-        ],
-        "roleSortOffset": 7,
-        "phaseTint": true,
-        "authoredFootprint": null,
-        "fallbackPolicy": "reversible3D",
-        "temporaryIdentityProxy": true,
-        "notes": "The scene builder must compose a deterministic cluster from catalog variants."
+      "walkAnimation": null,
+      "visualScale": 2.2,
+      "anchorOffset": [
+        0.0,
+        0.0
+      ],
+      "roleSortOffset": 23,
+      "phaseTint": true,
+      "authoredFootprint": null,
+      "fallbackPolicy": "reversible3D",
+      "temporaryIdentityProxy": false
+    },
+    {
+      "stableRoleId": "role.actor.nightmare.chainHound",
+      "assetId": "ChainHound",
+      "roles": [
+        "actor.nightmare"
+      ],
+      "componentTypeNames": [
+        "Abbey.Nightmares.ConsequenceMonsterController"
+      ],
+      "defaultSprite": "abbey_identity_chain_hound_lowpoly:abbey_identity_chain_hound_lowpoly_south",
+      "directionalSprites": {
+        "south": "abbey_identity_chain_hound_lowpoly:abbey_identity_chain_hound_lowpoly_south",
+        "east": "abbey_identity_chain_hound_lowpoly:abbey_identity_chain_hound_lowpoly_east",
+        "north": "abbey_identity_chain_hound_lowpoly:abbey_identity_chain_hound_lowpoly_north",
+        "west": "abbey_identity_chain_hound_lowpoly:abbey_identity_chain_hound_lowpoly_west"
       },
-      {
-        "stableRoleId": "role.dynamic.carried_resource",
-        "assetId": "carried_resource",
-        "roles": [
-          "dynamic.carriedResource"
-        ],
-        "componentTypeNames": [],
-        "defaultSprite": "prop_chests:prop_chests_r00_c00",
-        "directionalSprites": {},
-        "walkAnimation": null,
-        "visualScale": 0.7,
-        "anchorOffset": [
-          0.3,
-          0.8
-        ],
-        "roleSortOffset": 30,
-        "phaseTint": true,
-        "authoredFootprint": null,
-        "fallbackPolicy": "reversible3D",
-        "temporaryIdentityProxy": true,
-        "notes": "Generic carried-goods proxy; runtime role selects it independently from the carrier."
+      "walkAnimation": null,
+      "visualScale": 2.4,
+      "anchorOffset": [
+        0.0,
+        0.0
+      ],
+      "roleSortOffset": 25,
+      "phaseTint": true,
+      "authoredFootprint": null,
+      "fallbackPolicy": "reversible3D",
+      "temporaryIdentityProxy": false
+    },
+    {
+      "stableRoleId": "role.actor.nightmare.drownedSailor",
+      "assetId": "DrownedSailor",
+      "roles": [
+        "actor.nightmare"
+      ],
+      "componentTypeNames": [
+        "Abbey.Nightmares.DrownedSailorController"
+      ],
+      "defaultSprite": "abbey_identity_drowned_sailor_lowpoly:abbey_identity_drowned_sailor_lowpoly_south",
+      "directionalSprites": {
+        "south": "abbey_identity_drowned_sailor_lowpoly:abbey_identity_drowned_sailor_lowpoly_south",
+        "east": "abbey_identity_drowned_sailor_lowpoly:abbey_identity_drowned_sailor_lowpoly_east",
+        "north": "abbey_identity_drowned_sailor_lowpoly:abbey_identity_drowned_sailor_lowpoly_north",
+        "west": "abbey_identity_drowned_sailor_lowpoly:abbey_identity_drowned_sailor_lowpoly_west"
       },
-      {
-        "stableRoleId": "role.dynamic.construction_site",
-        "assetId": "construction_site",
-        "roles": [
-          "dynamic.constructionSite"
-        ],
-        "componentTypeNames": [
-          "Abbey.Buildings.ConstructionSite"
-        ],
-        "defaultSprite": "building_huts:building_huts_r00_c00",
-        "directionalSprites": {},
-        "walkAnimation": null,
-        "visualScale": 1.8,
-        "anchorOffset": [
-          0,
-          0
-        ],
-        "roleSortOffset": 9,
-        "phaseTint": true,
-        "authoredFootprint": null,
-        "fallbackPolicy": "reversible3D",
-        "temporaryIdentityProxy": true,
-        "notes": "Early-stage shelter frame; final building role replaces it on completion."
+      "walkAnimation": null,
+      "visualScale": 2.0,
+      "anchorOffset": [
+        0.0,
+        0.0
+      ],
+      "roleSortOffset": 25,
+      "phaseTint": true,
+      "authoredFootprint": null,
+      "fallbackPolicy": "reversible3D",
+      "temporaryIdentityProxy": false
+    },
+    {
+      "stableRoleId": "role.actor.nightmare.facelessSaint",
+      "assetId": "FacelessSaint",
+      "roles": [
+        "actor.nightmare"
+      ],
+      "componentTypeNames": [
+        "Abbey.Nightmares.ConsequenceMonsterController"
+      ],
+      "defaultSprite": "abbey_identity_faceless_saint_lowpoly:abbey_identity_faceless_saint_lowpoly_south",
+      "directionalSprites": {
+        "south": "abbey_identity_faceless_saint_lowpoly:abbey_identity_faceless_saint_lowpoly_south",
+        "east": "abbey_identity_faceless_saint_lowpoly:abbey_identity_faceless_saint_lowpoly_east",
+        "north": "abbey_identity_faceless_saint_lowpoly:abbey_identity_faceless_saint_lowpoly_north",
+        "west": "abbey_identity_faceless_saint_lowpoly:abbey_identity_faceless_saint_lowpoly_west"
       },
-      {
-        "stableRoleId": "role.dynamic.salvage_site",
-        "assetId": "salvage_site",
-        "roles": [
-          "dynamic.salvageSite"
-        ],
-        "componentTypeNames": [
-          "Abbey.Economy.SalvageSite"
-        ],
-        "defaultSprite": "prop_chests:prop_chests_r00_c01",
-        "directionalSprites": {},
-        "walkAnimation": null,
-        "visualScale": 1.1,
-        "anchorOffset": [
-          0,
-          0
-        ],
-        "roleSortOffset": 6,
-        "phaseTint": true,
-        "authoredFootprint": null,
-        "fallbackPolicy": "reversible3D",
-        "temporaryIdentityProxy": false
+      "walkAnimation": null,
+      "visualScale": 2.5,
+      "anchorOffset": [
+        0.0,
+        0.0
+      ],
+      "roleSortOffset": 25,
+      "phaseTint": true,
+      "authoredFootprint": null,
+      "fallbackPolicy": "reversible3D",
+      "temporaryIdentityProxy": false
+    },
+    {
+      "stableRoleId": "role.actor.nightmare.lanternMoth",
+      "assetId": "LanternMoth",
+      "roles": [
+        "actor.nightmare"
+      ],
+      "componentTypeNames": [
+        "Abbey.Nightmares.LanternMothController"
+      ],
+      "defaultSprite": "abbey_identity_lantern_moth_lowpoly:abbey_identity_lantern_moth_lowpoly_south",
+      "directionalSprites": {
+        "south": "abbey_identity_lantern_moth_lowpoly:abbey_identity_lantern_moth_lowpoly_south",
+        "east": "abbey_identity_lantern_moth_lowpoly:abbey_identity_lantern_moth_lowpoly_east",
+        "north": "abbey_identity_lantern_moth_lowpoly:abbey_identity_lantern_moth_lowpoly_north",
+        "west": "abbey_identity_lantern_moth_lowpoly:abbey_identity_lantern_moth_lowpoly_west"
       },
-      {
-        "stableRoleId": "role.dynamic.restoration_node",
-        "assetId": "restoration_node",
-        "roles": [
-          "dynamic.restorationNode"
-        ],
-        "componentTypeNames": [
-          "Abbey.Buildings.RestorationNode"
-        ],
-        "defaultSprite": "building_tower:building_tower_r02_c00",
-        "directionalSprites": {},
-        "walkAnimation": null,
-        "visualScale": 2.2,
-        "anchorOffset": [
-          0,
-          0
-        ],
-        "roleSortOffset": 13,
-        "phaseTint": true,
-        "authoredFootprint": null,
-        "fallbackPolicy": "reversible3D",
-        "temporaryIdentityProxy": true,
-        "notes": "Generic repair marker; the completed identity asset remains role-specific."
+      "walkAnimation": null,
+      "visualScale": 1.4,
+      "anchorOffset": [
+        0.0,
+        0.65
+      ],
+      "roleSortOffset": 26,
+      "phaseTint": false,
+      "authoredFootprint": null,
+      "fallbackPolicy": "reversible3D",
+      "temporaryIdentityProxy": false
+    },
+    {
+      "stableRoleId": "role.actor.nightmare.paleHound",
+      "assetId": "PaleHound",
+      "roles": [
+        "actor.nightmare"
+      ],
+      "componentTypeNames": [
+        "Abbey.Nightmares.PaleHoundController"
+      ],
+      "defaultSprite": "abbey_identity_pale_hound_lowpoly:abbey_identity_pale_hound_lowpoly_south",
+      "directionalSprites": {
+        "south": "abbey_identity_pale_hound_lowpoly:abbey_identity_pale_hound_lowpoly_south",
+        "east": "abbey_identity_pale_hound_lowpoly:abbey_identity_pale_hound_lowpoly_east",
+        "north": "abbey_identity_pale_hound_lowpoly:abbey_identity_pale_hound_lowpoly_north",
+        "west": "abbey_identity_pale_hound_lowpoly:abbey_identity_pale_hound_lowpoly_west"
       },
-      {
-        "stableRoleId": "role.dynamic.night_objective",
-        "assetId": "night_objective",
-        "roles": [
-          "dynamic.nightObjective"
-        ],
-        "componentTypeNames": [],
-        "defaultSprite": "ui_highlights:ui_highlights_r00_c04",
-        "directionalSprites": {},
-        "walkAnimation": null,
-        "visualScale": 1,
-        "anchorOffset": [
-          0,
-          0
-        ],
-        "roleSortOffset": 90,
-        "phaseTint": false,
-        "authoredFootprint": null,
-        "fallbackPolicy": "reversible3D",
-        "temporaryIdentityProxy": false
-      }
+      "walkAnimation": null,
+      "visualScale": 2.2,
+      "anchorOffset": [
+        0.0,
+        0.0
+      ],
+      "roleSortOffset": 25,
+      "phaseTint": true,
+      "authoredFootprint": null,
+      "fallbackPolicy": "reversible3D",
+      "temporaryIdentityProxy": false
+    },
+    {
+      "stableRoleId": "role.actor.stag",
+      "assetId": "stag_beneath_abbey_lowpoly",
+      "roles": [
+        "actor.stag"
+      ],
+      "componentTypeNames": [
+        "Abbey.Map2.StagCovenantSystem"
+      ],
+      "defaultSprite": "abbey_identity_stag_beneath_abbey_lowpoly:abbey_identity_stag_beneath_abbey_lowpoly_south",
+      "directionalSprites": {
+        "south": "abbey_identity_stag_beneath_abbey_lowpoly:abbey_identity_stag_beneath_abbey_lowpoly_south",
+        "east": "abbey_identity_stag_beneath_abbey_lowpoly:abbey_identity_stag_beneath_abbey_lowpoly_east",
+        "north": "abbey_identity_stag_beneath_abbey_lowpoly:abbey_identity_stag_beneath_abbey_lowpoly_north",
+        "west": "abbey_identity_stag_beneath_abbey_lowpoly:abbey_identity_stag_beneath_abbey_lowpoly_west"
+      },
+      "walkAnimation": null,
+      "visualScale": 2.8,
+      "anchorOffset": [
+        0.0,
+        0.0
+      ],
+      "roleSortOffset": 23,
+      "phaseTint": true,
+      "authoredFootprint": null,
+      "fallbackPolicy": "reversible3D",
+      "temporaryIdentityProxy": false
+    },
+    {
+      "stableRoleId": "role.building.abbeyCloister",
+      "assetId": "abbey_cloister_t1",
+      "roles": [
+        "building.abbeyCloister"
+      ],
+      "componentTypeNames": [],
+      "defaultSprite": "abbey_identity_abbey_cloister_t1:abbey_identity_abbey_cloister_t1_south",
+      "directionalSprites": null,
+      "walkAnimation": null,
+      "visualScale": 4.0,
+      "anchorOffset": [
+        0.0,
+        0.0
+      ],
+      "roleSortOffset": 12,
+      "phaseTint": true,
+      "authoredFootprint": [
+        3.0,
+        2.0
+      ],
+      "fallbackPolicy": "reversible3D",
+      "temporaryIdentityProxy": false
+    },
+    {
+      "stableRoleId": "role.building.abbeyCloisterRepair",
+      "assetId": "abbey_cloister_repair",
+      "roles": [
+        "building.abbeyCloisterRepair"
+      ],
+      "componentTypeNames": [],
+      "defaultSprite": "abbey_identity_abbey_cloister_t1:abbey_identity_abbey_cloister_t1_south",
+      "directionalSprites": null,
+      "walkAnimation": null,
+      "visualScale": 4.0,
+      "anchorOffset": [
+        0.0,
+        0.0
+      ],
+      "roleSortOffset": 12,
+      "phaseTint": true,
+      "authoredFootprint": [
+        4.1,
+        1.15
+      ],
+      "fallbackPolicy": "reversible3D",
+      "temporaryIdentityProxy": false
+    },
+    {
+      "stableRoleId": "role.building.campfire",
+      "assetId": "campfire_t1",
+      "roles": [
+        "building.campfire"
+      ],
+      "componentTypeNames": [
+        "Abbey.Light.LightSource"
+      ],
+      "defaultSprite": "abbey_identity_campfire_t1:abbey_identity_campfire_t1_south",
+      "directionalSprites": null,
+      "walkAnimation": null,
+      "visualScale": 1.35,
+      "anchorOffset": [
+        0.0,
+        0.0
+      ],
+      "roleSortOffset": 16,
+      "phaseTint": false,
+      "authoredFootprint": [
+        1.0,
+        1.0
+      ],
+      "fallbackPolicy": "reversible3D",
+      "temporaryIdentityProxy": false
+    },
+    {
+      "stableRoleId": "role.building.charcoalKiln",
+      "assetId": "charcoal_kiln_t1",
+      "roles": [
+        "building.charcoalKiln"
+      ],
+      "componentTypeNames": [
+        "Abbey.Economy.ProductionBuilding"
+      ],
+      "defaultSprite": "abbey_identity_charcoal_kiln_t1:abbey_identity_charcoal_kiln_t1_south",
+      "directionalSprites": null,
+      "walkAnimation": null,
+      "visualScale": 2.3,
+      "anchorOffset": [
+        0.0,
+        0.0
+      ],
+      "roleSortOffset": 12,
+      "phaseTint": true,
+      "authoredFootprint": [
+        2.0,
+        2.0
+      ],
+      "fallbackPolicy": "reversible3D",
+      "temporaryIdentityProxy": false
+    },
+    {
+      "stableRoleId": "role.building.lanternPost",
+      "assetId": "lantern_post_t1",
+      "roles": [
+        "building.lanternPost"
+      ],
+      "componentTypeNames": [
+        "Abbey.Light.LightSource"
+      ],
+      "defaultSprite": "abbey_identity_lantern_post_t1:abbey_identity_lantern_post_t1_south",
+      "directionalSprites": null,
+      "walkAnimation": null,
+      "visualScale": 2.5,
+      "anchorOffset": [
+        0.0,
+        0.0
+      ],
+      "roleSortOffset": 16,
+      "phaseTint": false,
+      "authoredFootprint": [
+        1.0,
+        1.0
+      ],
+      "fallbackPolicy": "reversible3D",
+      "temporaryIdentityProxy": false
+    },
+    {
+      "stableRoleId": "role.building.ruinedBellTower",
+      "assetId": "bell_tower_ruined",
+      "roles": [
+        "building.ruinedBellTower"
+      ],
+      "componentTypeNames": [],
+      "defaultSprite": "abbey_identity_bell_tower_ruined:abbey_identity_bell_tower_ruined_south",
+      "directionalSprites": null,
+      "walkAnimation": null,
+      "visualScale": 4.8,
+      "anchorOffset": [
+        0.0,
+        0.0
+      ],
+      "roleSortOffset": 12,
+      "phaseTint": true,
+      "authoredFootprint": [
+        3.0,
+        3.0
+      ],
+      "fallbackPolicy": "reversible3D",
+      "temporaryIdentityProxy": false
+    },
+    {
+      "stableRoleId": "role.prop.houndChain",
+      "assetId": "hound_chain",
+      "roles": [
+        "prop.houndChain"
+      ],
+      "componentTypeNames": [],
+      "defaultSprite": "abbey_identity_hound_chain:abbey_identity_hound_chain_south",
+      "directionalSprites": null,
+      "walkAnimation": null,
+      "visualScale": 1.3,
+      "anchorOffset": [
+        0.0,
+        0.0
+      ],
+      "roleSortOffset": 15,
+      "phaseTint": true,
+      "authoredFootprint": null,
+      "fallbackPolicy": "reversible3D",
+      "temporaryIdentityProxy": false
+    },
+    {
+      "stableRoleId": "role.prop.shipwreckBarrel",
+      "assetId": "shipwreck_barrel",
+      "roles": [
+        "prop.shipwreckBarrel"
+      ],
+      "componentTypeNames": [],
+      "defaultSprite": "abbey_identity_shipwreck_barrel:abbey_identity_shipwreck_barrel_south",
+      "directionalSprites": null,
+      "walkAnimation": null,
+      "visualScale": 1.0,
+      "anchorOffset": [
+        0.0,
+        0.0
+      ],
+      "roleSortOffset": 15,
+      "phaseTint": true,
+      "authoredFootprint": null,
+      "fallbackPolicy": "reversible3D",
+      "temporaryIdentityProxy": false
+    },
+    {
+      "stableRoleId": "role.prop.shipwreckHull",
+      "assetId": "shipwreck_hull",
+      "roles": [
+        "prop.shipwreckHull"
+      ],
+      "componentTypeNames": [],
+      "defaultSprite": "abbey_identity_shipwreck_hull:abbey_identity_shipwreck_hull_south",
+      "directionalSprites": null,
+      "walkAnimation": null,
+      "visualScale": 6.2,
+      "anchorOffset": [
+        0.0,
+        0.0
+      ],
+      "roleSortOffset": 14,
+      "phaseTint": true,
+      "authoredFootprint": null,
+      "fallbackPolicy": "reversible3D",
+      "temporaryIdentityProxy": false
+    }
   ],
   "unresolvedRoles": [
-    {
-      "stableRoleId": "unresolved.actor.bellkeeper",
-      "role": "actor.bellkeeper",
-      "assetId": "bellkeeper_lowpoly",
-      "signatureRole": true,
-      "reason": "No bell/lantern-bearing human in the archive; champion sprites change the signature silhouette.",
-      "fallbackPolicy": "reversible3DInfrastructureOnly",
-      "temporaryIdentityProxy": false
-    },
-    {
-      "stableRoleId": "unresolved.actor.blackHound",
-      "role": "actor.blackHound",
-      "assetId": "black_hound_lowpoly",
-      "signatureRole": true,
-      "reason": "No dog or hound sprite; farm animals are not an honest proxy.",
-      "fallbackPolicy": "reversible3DInfrastructureOnly",
-      "temporaryIdentityProxy": false
-    },
-    {
-      "stableRoleId": "unresolved.actor.stag",
-      "role": "actor.stag",
-      "assetId": "stag_beneath_abbey_lowpoly",
-      "signatureRole": true,
-      "reason": "No deer or stag sprite; horned sheep is not an honest proxy.",
-      "fallbackPolicy": "reversible3DInfrastructureOnly",
-      "temporaryIdentityProxy": false
-    },
-    {
-      "stableRoleId": "unresolved.building.ruinedBellTower",
-      "role": "building.ruinedBellTower",
-      "assetId": "bell_tower_ruined",
-      "signatureRole": true,
-      "reason": "Generic tower cannot represent the ruined Abbey identity silhouette.",
-      "fallbackPolicy": "reversible3DInfrastructureOnly",
-      "temporaryIdentityProxy": false
-    },
-    {
-      "stableRoleId": "unresolved.building.abbeyCloister",
-      "role": "building.abbeyCloister",
-      "assetId": "abbey_cloister_t1",
-      "signatureRole": true,
-      "reason": "Generic chapel cannot represent the Abbey of Antlers identity.",
-      "fallbackPolicy": "reversible3DInfrastructureOnly",
-      "temporaryIdentityProxy": false
-    },
-    {
-      "stableRoleId": "unresolved.building.abbeyCloisterRepair",
-      "role": "building.abbeyCloisterRepair",
-      "assetId": "abbey_cloister_repair",
-      "signatureRole": true,
-      "reason": "Generic chapel cannot represent the restored cloister identity.",
-      "fallbackPolicy": "reversible3DInfrastructureOnly",
-      "temporaryIdentityProxy": false
-    },
-    {
-      "stableRoleId": "unresolved.building.campfire",
-      "role": "building.campfire",
-      "assetId": "campfire_t1",
-      "signatureRole": false,
-      "reason": "Archive contains no campfire sprite.",
-      "fallbackPolicy": "reversible3DInfrastructureOnly",
-      "temporaryIdentityProxy": false
-    },
-    {
-      "stableRoleId": "unresolved.building.lanternPost",
-      "role": "building.lanternPost",
-      "assetId": "lantern_post_t1",
-      "signatureRole": false,
-      "reason": "Archive contains no lantern-post sprite.",
-      "fallbackPolicy": "reversible3DInfrastructureOnly",
-      "temporaryIdentityProxy": false
-    },
-    {
-      "stableRoleId": "unresolved.building.charcoalKiln",
-      "role": "building.charcoalKiln",
-      "assetId": "charcoal_kiln_t1",
-      "signatureRole": false,
-      "reason": "Archive contains no charcoal-kiln sprite.",
-      "fallbackPolicy": "reversible3DInfrastructureOnly",
-      "temporaryIdentityProxy": false
-    },
-    {
-      "stableRoleId": "unresolved.prop.shipwreckHull",
-      "role": "prop.shipwreckHull",
-      "assetId": "shipwreck_hull",
-      "signatureRole": false,
-      "reason": "Available ships are intact and not an honest wreck proxy.",
-      "fallbackPolicy": "reversible3DInfrastructureOnly",
-      "temporaryIdentityProxy": false
-    },
-    {
-      "stableRoleId": "unresolved.prop.shipwreckBarrel",
-      "role": "prop.shipwreckBarrel",
-      "assetId": "shipwreck_barrel",
-      "signatureRole": false,
-      "reason": "Archive contains no barrel sprite.",
-      "fallbackPolicy": "reversible3DInfrastructureOnly",
-      "temporaryIdentityProxy": false
-    },
-    {
-      "stableRoleId": "unresolved.prop.houndChain",
-      "role": "prop.houndChain",
-      "assetId": "hound_chain",
-      "signatureRole": true,
-      "reason": "Archive contains no chain sprite suitable for the bond scene.",
-      "fallbackPolicy": "reversible3DInfrastructureOnly",
-      "temporaryIdentityProxy": false
-    },
-    {
-      "stableRoleId": "unresolved.actor.nightmare.paleHound",
-      "role": "actor.nightmare.paleHound",
-      "assetId": "PaleHound",
-      "signatureRole": true,
-      "reason": "No canine sprite.",
-      "fallbackPolicy": "reversible3DInfrastructureOnly",
-      "temporaryIdentityProxy": false
-    },
-    {
-      "stableRoleId": "unresolved.actor.nightmare.drownedSailor",
-      "role": "actor.nightmare.drownedSailor",
-      "assetId": "DrownedSailor",
-      "signatureRole": true,
-      "reason": "Pirates are living; skeleton is not recognisably drowned or nautical.",
-      "fallbackPolicy": "reversible3DInfrastructureOnly",
-      "temporaryIdentityProxy": false
-    },
-    {
-      "stableRoleId": "unresolved.actor.nightmare.lanternMoth",
-      "role": "actor.nightmare.lanternMoth",
-      "assetId": "LanternMoth",
-      "signatureRole": true,
-      "reason": "No moth sprite.",
-      "fallbackPolicy": "reversible3DInfrastructureOnly",
-      "temporaryIdentityProxy": false
-    },
     {
       "stableRoleId": "unresolved.actor.nightmare.deadWorker",
       "role": "actor.nightmare.deadWorker",
       "assetId": "DeadWorker",
       "signatureRole": true,
       "reason": "Generic skeleton loses the worker identity.",
-      "fallbackPolicy": "reversible3DInfrastructureOnly",
-      "temporaryIdentityProxy": false
-    },
-    {
-      "stableRoleId": "unresolved.actor.nightmare.chainHound",
-      "role": "actor.nightmare.chainHound",
-      "assetId": "ChainHound",
-      "signatureRole": true,
-      "reason": "No canine sprite.",
-      "fallbackPolicy": "reversible3DInfrastructureOnly",
-      "temporaryIdentityProxy": false
-    },
-    {
-      "stableRoleId": "unresolved.actor.nightmare.facelessSaint",
-      "role": "actor.nightmare.facelessSaint",
-      "assetId": "FacelessSaint",
-      "signatureRole": true,
-      "reason": "No faceless sacred humanoid sprite.",
       "fallbackPolicy": "reversible3DInfrastructureOnly",
       "temporaryIdentityProxy": false
     },
@@ -6023,13 +7243,21 @@
     "inventory": "inventory.md",
     "contactSheet": {
       "path": "contact-sheet.png",
-      "sha256": "98cf0d4886f79ba520bf94bf61fa9a98a49d4496e92f6540f57e558247497470",
+      "sha256": "3f234596eb4c973d6e035c5513c9374cfefa93e4744a71e7a999c62b4872beb8",
       "dimensions": {
         "width": 1152,
-        "height": 7224
+        "height": 8064
       }
     }
   },
   "finalVisualGateBlocked": true,
-  "finalVisualGateBlockReason": "Signature roles and required runtime roles listed in unresolvedRoles have no honest proxy in the pinned pack."
+  "finalVisualGateBlockReason": "6 signature roles still lack an approved sprite source; identity-preserving reversible 3D fallbacks remain.",
+  "generatedIdentitySource": {
+    "kind": "abbeySpecGenerated",
+    "ownership": "Abbey project-generated derivative presentation",
+    "sourceContract": "validated asset spec + generated GLB",
+    "generatorPath": "blender/scripts/render_identity_sprites.py",
+    "generatorSha256": "716ea39f99051b21f0ac6c2f722d021c8eeac227967b23086e8a5cba778a49e7",
+    "paletteContract": "shared Abbey materials, quantized lighting, one-pixel outline"
+  }
 }

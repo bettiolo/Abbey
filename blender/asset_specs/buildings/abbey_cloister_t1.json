@@ -14,5 +14,38 @@
     { "name": "garth_center", "type": "work" },
     { "name": "gate", "type": "door" }
   ],
+  "sprite_projection": {
+    "enabled": true,
+    "filename": "abbey_generated_abbey_cloister_t1.png",
+    "cell_size": 64,
+    "views": ["south"],
+    "camera_padding": 1.35,
+    "color_steps": 12,
+    "outline_color": [0.08, 0.07, 0.065],
+    "catalog_entries": [
+      {
+        "stable_role_id": "role.building.abbeyCloister",
+        "asset_id": "abbey_cloister_t1",
+        "roles": ["building.abbeyCloister"],
+        "component_type_names": [],
+        "visual_scale": 4.0,
+        "anchor_offset": [0.0, 0.0],
+        "sort_offset": 12,
+        "phase_tint": true,
+        "authored_footprint": [3.0, 2.0]
+      },
+      {
+        "stable_role_id": "role.building.abbeyCloisterRepair",
+        "asset_id": "abbey_cloister_repair",
+        "roles": ["building.abbeyCloisterRepair"],
+        "component_type_names": [],
+        "visual_scale": 4.0,
+        "anchor_offset": [0.0, 0.0],
+        "sort_offset": 12,
+        "phase_tint": true,
+        "authored_footprint": [4.1, 1.15]
+      }
+    ]
+  },
   "pivot": "center_bottom"
 }

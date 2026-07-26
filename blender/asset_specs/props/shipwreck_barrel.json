@@ -13,5 +13,27 @@
   "anchors": [
     { "name": "carry_handle", "type": "grip" }
   ],
+  "sprite_projection": {
+    "enabled": true,
+    "filename": "abbey_generated_shipwreck_barrel.png",
+    "cell_size": 32,
+    "views": ["south"],
+    "camera_padding": 1.25,
+    "color_steps": 12,
+    "outline_color": [0.08, 0.07, 0.065],
+    "catalog_entries": [
+      {
+        "stable_role_id": "role.prop.shipwreckBarrel",
+        "asset_id": "shipwreck_barrel",
+        "roles": ["prop.shipwreckBarrel"],
+        "component_type_names": [],
+        "visual_scale": 1.0,
+        "anchor_offset": [0.0, 0.0],
+        "sort_offset": 15,
+        "phase_tint": true,
+        "authored_footprint": null
+      }
+    ]
+  },
   "pivot": "center_bottom"
 }

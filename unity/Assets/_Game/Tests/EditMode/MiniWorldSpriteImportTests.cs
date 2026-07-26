@@ -24,8 +24,8 @@ namespace Abbey.Tests.EditMode
             List<string> errors = MiniWorldProjectionValidator.CollectManifestErrors(manifest);
 
             Assert.That(errors, Is.Empty, string.Join("\n", errors));
-            Assert.That(manifest.files, Has.Length.EqualTo(32));
-            Assert.That(manifest.entries, Has.Length.EqualTo(61));
+            Assert.That(manifest.files, Has.Length.EqualTo(48));
+            Assert.That(manifest.entries, Has.Length.EqualTo(78));
         }
 
         [Test]
@@ -40,7 +40,8 @@ namespace Abbey.Tests.EditMode
                 Assert.That(importer, Is.Not.Null, file.fileId);
                 Assert.That(importer.textureType, Is.EqualTo(TextureImporterType.Sprite), file.fileId);
                 Assert.That(importer.spriteImportMode, Is.EqualTo(SpriteImportMode.Multiple), file.fileId);
-                Assert.That(importer.spritePixelsPerUnit, Is.EqualTo(16f), file.fileId);
+                Assert.That(importer.spritePixelsPerUnit, Is.EqualTo((float)file.pixelsPerUnit),
+                    file.fileId);
                 Assert.That(importer.filterMode, Is.EqualTo(FilterMode.Point), file.fileId);
                 Assert.That(importer.mipmapEnabled, Is.False, file.fileId);
                 Assert.That(importer.textureCompression, Is.EqualTo(TextureImporterCompression.Uncompressed), file.fileId);
@@ -92,9 +93,12 @@ namespace Abbey.Tests.EditMode
                 Assert.That(actual.anchorOffset, Is.EqualTo(expected.AnchorOffset));
                 Assert.That(actual.sortingOffset, Is.EqualTo(expected.roleSortOffset));
                 Assert.That(actual.authoredFootprint, Is.EqualTo(expected.AuthoredFootprint));
-                if (expected.HasWalkAnimationData)
+                if (expected.HasDirectionalSpriteData)
                 {
                     Assert.That(actual.HasDirectionalSprites, Is.True, expected.assetId);
+                }
+                if (expected.HasWalkAnimationData)
+                {
                     Assert.That(actual.southWalk, Has.Length.EqualTo(
                         expected.walkAnimation.directions.south.Length), expected.assetId);
                     Assert.That(actual.northWalk, Has.Length.EqualTo(

@@ -1,6 +1,6 @@
 {
   "id": "lantern_moth_lowpoly",
-  "generated_at": "2026-07-02T19:20:03.842048+00:00",
+  "generated_at": "2026-07-26T14:40:42.668781+00:00",
   "spec": {
     "id": "lantern_moth_lowpoly",
     "type": "character",
@@ -39,6 +39,44 @@
         "type": "light"
       }
     ],
+    "sprite_projection": {
+      "enabled": true,
+      "filename": "abbey_generated_lantern_moth_lowpoly.png",
+      "cell_size": 32,
+      "views": [
+        "south",
+        "east",
+        "north",
+        "west"
+      ],
+      "camera_padding": 1.2,
+      "color_steps": 10,
+      "outline_color": [
+        0.05,
+        0.045,
+        0.04
+      ],
+      "catalog_entries": [
+        {
+          "stable_role_id": "role.actor.nightmare.lanternMoth",
+          "asset_id": "LanternMoth",
+          "roles": [
+            "actor.nightmare"
+          ],
+          "component_type_names": [
+            "Abbey.Nightmares.LanternMothController"
+          ],
+          "visual_scale": 1.4,
+          "anchor_offset": [
+            0.0,
+            0.65
+          ],
+          "sort_offset": 26,
+          "phase_tint": false,
+          "authored_footprint": null
+        }
+      ]
+    },
     "pivot": "center_bottom"
   },
   "dimensions": {

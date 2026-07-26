@@ -1191,13 +1191,14 @@ tasks:
     depends_on: [P2D-06]
     status: in_progress
     assigned_to: orchestrator
-    branch: codex/sprite-projection
+    branch: codex/sprite-art-completion
     validation: >
       Technical candidate passed the local Unity 6000.5.2f1 MCP gate at runtime commit
-      6ff7030: both scenes, deterministic sprite import/catalog validation, EditMode
-      418/418, PlayMode 72/72, console errors 0, and six inspected screenshots. The
-      Merchant Shade pack has 23 explicitly unresolved roles, so the no-mixed-fallback
-      acceptance criterion and human art gate are not yet satisfied.
+      0f2d678: both scenes, deterministic sprite import/catalog validation, EditMode
+      418/418, PlayMode 72/72, console errors 0, and six inspected screenshots. A
+      deterministic Abbey identity bake resolved 17 of the original 23 visual gaps;
+      six roles remain explicitly unresolved, so the no-mixed-fallback acceptance
+      criterion and human art gate are not yet satisfied.
 
 gates:
   - id: GATE-0.1
@@ -1262,7 +1263,9 @@ gates:
     ready: false
     evidence: >
       A technically validated draft candidate and six canonical screenshots exist on
-      codex/sprite-projection. The curated pack honestly lacks 23 roles, including the
-      Bellkeeper, Black Hound, Stag, ruined bell tower, campfire, and several nightmares;
-      those retain reversible 3D identity fallbacks. Resolve or explicitly accept that
-      art debt before asking the repository owner for camera/scale/palette approval.
+      codex/sprite-art-completion. Abbey-generated identity sheets now cover the
+      Bellkeeper, Black Hound, Stag, ruined bell tower, cloister states, campfire,
+      shipwreck props, and five bespoke nightmares. Dead Worker, Root Walker, Bell Mimic,
+      Hollow Deer, Charcoal Dead, and Sacred Flame still retain reversible 3D identity
+      fallbacks. Resolve or explicitly accept that art debt before asking the repository
+      owner for camera/scale/palette approval.
