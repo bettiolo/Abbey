@@ -113,6 +113,36 @@ def test_signature_roles_use_spec_generated_identity_sheets() -> None:
         entry = entries[role]
         file_id = entry["defaultSprite"].split(":", 1)[0]
         assert generated_files[file_id]["sourceSha256"]
-        assert generated_files[file_id]["sourceGlbSha256"]
+        assert generated_files[file_id]["sourceGlbPath"]
+        assert generated_files[file_id]["sourceMetadataPath"]
+        assert generated_files[file_id]["sourceGlbStructuralSha256"]
         assert generated_files[file_id]["sourceRendererSha256"]
         assert entry["temporaryIdentityProxy"] is False
+
+
+def test_structural_glb_fingerprint_ignores_exporter_noise(tmp_path: Path) -> None:
+    source = REPO_ROOT / "blender/generated/metadata/bellkeeper_lowpoly.meta.json"
+    original = json.loads(source.read_text(encoding="utf-8"))
+    rebuilt = json.loads(source.read_text(encoding="utf-8"))
+    rebuilt["generated_at"] = "2099-01-01T00:00:00+00:00"
+    glb_check = next(
+        check
+        for check in rebuilt["validation"]["checks"]
+        if check["name"] == "glb_exists"
+    )
+    glb_check["detail"] = (
+        "blender/generated/glb/bellkeeper_lowpoly.glb (64720 bytes)"
+    )
+    rebuilt_path = tmp_path / "rebuilt.meta.json"
+    rebuilt_path.write_text(json.dumps(rebuilt), encoding="utf-8")
+
+    assert validator.structural_metadata_sha256(source) == (
+        validator.structural_metadata_sha256(rebuilt_path)
+    )
+
+    original["triangle_count"] += 1
+    changed_path = tmp_path / "changed.meta.json"
+    changed_path.write_text(json.dumps(original), encoding="utf-8")
+    assert validator.structural_metadata_sha256(source) != (
+        validator.structural_metadata_sha256(changed_path)
+    )

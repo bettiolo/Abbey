@@ -9,8 +9,9 @@ Validated locally on 2026-07-26 at runtime commit `ed408bb` with Unity `6000.5.2
   slices, and 78 mapped Abbey roles.
 - Added a spec-owned identity bake for roles that the generic pack cannot represent.
   Sixteen validated Abbey asset specs now produce palette-quantized, bottom-anchored
-  sprite sheets from their generated GLBs with exact source, renderer, and output hashes.
-  Repeated Blender runs produce byte-identical PNGs.
+  sprite sheets from their generated GLBs with exact spec, renderer, and output hashes
+  plus a cross-exporter structural GLB fingerprint. Repeated Blender runs produce
+  byte-identical PNGs.
 - Generated texture import settings and `MiniWorldSpriteProjectionCatalog.asset` from the
   manifest; the importer and validator reject source drift, path traversal, bad geometry,
   duplicate identities, invalid footprints, and catalog drift.

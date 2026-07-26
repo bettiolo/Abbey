@@ -15,9 +15,11 @@ source sheets; the full archive and guide remain in ignored `third_party_cache/`
 `AbbeyGeneratedIdentity/` contains derived sprite sheets for signature objects that the
 CC0 pack cannot honestly represent. They are deterministically rendered from the
 repository's validated asset specs and generated GLBs by
-`blender/scripts/render_identity_sprites.py`. Each generated sheet records the hashes of
-its source spec, GLB, renderer, and PNG in the same manifest. They do not change the
-license or authorship of the Merchant Shade source sheets.
+`blender/scripts/render_identity_sprites.py`. Each generated sheet records exact hashes
+for its source spec, renderer, and PNG plus a structural GLB fingerprint derived from
+normalized asset metadata. Raw GLB bytes are intentionally not pinned because Blender
+exporter versions can encode identical geometry differently. These sheets do not change
+the license or authorship of the Merchant Shade source sheets.
 
 Acquisition pin:
 

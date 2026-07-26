@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import re
 import struct
 from pathlib import Path
 
@@ -16,6 +17,7 @@ EXPECTED_ARCHIVE = {
     "archiveSize": 2_084_074,
     "archiveSha256": "79eb000cfd3f64fee8ac8307f02bb867dc8b4fd7ce5a150119c51dedfa563f1f",
 }
+_BYTES_RE = re.compile(r"\(\d+ bytes\)")
 REQUIRED_ENTRY_FIELDS = {
     "stableRoleId",
     "assetId",
@@ -44,6 +46,20 @@ def sha256(path: Path) -> str:
         for chunk in iter(lambda: stream.read(1024 * 1024), b""):
             digest.update(chunk)
     return digest.hexdigest()
+
+
+def structural_metadata_sha256(path: Path) -> str:
+    """Hash stable asset structure, not exporter-version-dependent GLB bytes."""
+    data = json.loads(path.read_text(encoding="utf-8"))
+    data.pop("generated_at", None)
+    for check in data.get("validation", {}).get("checks", []):
+        detail = check.get("detail")
+        if isinstance(detail, str):
+            check["detail"] = _BYTES_RE.sub("(<n> bytes)", detail)
+    canonical = json.dumps(
+        data, sort_keys=True, separators=(",", ":"), ensure_ascii=False
+    ).encode("utf-8")
+    return hashlib.sha256(canonical).hexdigest()
 
 
 def png_dimensions(path: Path) -> tuple[int, int]:
@@ -186,7 +202,6 @@ def validate(curated_root: Path, cache_root: Path | None = None) -> dict:
             if repo_root is not None:
                 for path_key, hash_key in (
                     ("sourcePath", "sourceSha256"),
-                    ("sourceGlbPath", "sourceGlbSha256"),
                     ("sourceRendererPath", "sourceRendererSha256"),
                 ):
                     try:
@@ -200,6 +215,30 @@ def validate(curated_root: Path, cache_root: Path | None = None) -> dict:
                         errors.append(f"{file_id}: missing generated source {source}")
                     elif sha256(source) != record.get(hash_key):
                         errors.append(f"{file_id}: {hash_key} mismatch")
+                try:
+                    glb = resolve_under(
+                        repo_root, str(record.get("sourceGlbPath", "")), "sourceGlbPath"
+                    )
+                    metadata = resolve_under(
+                        repo_root,
+                        str(record.get("sourceMetadataPath", "")),
+                        "sourceMetadataPath",
+                    )
+                except ValidationError as exc:
+                    errors.append(f"{file_id}: {exc}")
+                else:
+                    if not glb.is_file() or glb.stat().st_size <= 0:
+                        errors.append(f"{file_id}: missing/empty generated GLB {glb}")
+                    if not metadata.is_file():
+                        errors.append(
+                            f"{file_id}: missing generated metadata {metadata}"
+                        )
+                    elif structural_metadata_sha256(metadata) != record.get(
+                        "sourceGlbStructuralSha256"
+                    ):
+                        errors.append(
+                            f"{file_id}: sourceGlbStructuralSha256 mismatch"
+                        )
         else:
             if width % 16 or height % 16 or cell != {
                 "width": 16,

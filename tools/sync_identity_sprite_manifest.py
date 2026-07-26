@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """Synchronize spec-generated identity sprites into the projection manifest.
 
-The renderer writes PNG sheets from asset specs.  This tool records their exact
-hashes, source spec/GLB provenance, deterministic slices, and catalog mappings,
-then removes the matching roles from the honest unresolved list.
+The renderer writes PNG sheets from asset specs. This tool records exact
+spec/renderer/output hashes, a cross-exporter structural GLB fingerprint,
+deterministic slices, and catalog mappings, then removes the matching roles
+from the honest unresolved list.
 """
 
 from __future__ import annotations
@@ -11,6 +12,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import re
 import struct
 from pathlib import Path
 
@@ -19,6 +21,7 @@ MANIFEST_RELATIVE = Path(
 )
 SPEC_ROOT_RELATIVE = Path("blender/asset_specs")
 GLB_ROOT_RELATIVE = Path("blender/generated/glb")
+METADATA_ROOT_RELATIVE = Path("blender/generated/metadata")
 SPRITE_ROOT_RELATIVE = Path(
     "unity/Assets/_Game/Art/Placeholders/MerchantShadeMiniWorld/"
     "AbbeyGeneratedIdentity"
@@ -26,6 +29,7 @@ SPRITE_ROOT_RELATIVE = Path(
 RENDERER_RELATIVE = Path("blender/scripts/render_identity_sprites.py")
 SOURCE_KIND = "abbeySpecGenerated"
 VIEW_ORDER = ("south", "east", "north", "west")
+_BYTES_RE = re.compile(r"\(\d+ bytes\)")
 
 
 class SyncError(RuntimeError):
@@ -38,6 +42,20 @@ def sha256(path: Path) -> str:
         for chunk in iter(lambda: stream.read(1024 * 1024), b""):
             digest.update(chunk)
     return digest.hexdigest()
+
+
+def structural_metadata_sha256(path: Path) -> str:
+    """Hash the generated asset contract while ignoring exporter noise."""
+    data = json.loads(path.read_text(encoding="utf-8"))
+    data.pop("generated_at", None)
+    for check in data.get("validation", {}).get("checks", []):
+        detail = check.get("detail")
+        if isinstance(detail, str):
+            check["detail"] = _BYTES_RE.sub("(<n> bytes)", detail)
+    canonical = json.dumps(
+        data, sort_keys=True, separators=(",", ":"), ensure_ascii=False
+    ).encode("utf-8")
+    return hashlib.sha256(canonical).hexdigest()
 
 
 def png_dimensions(path: Path) -> tuple[int, int]:
@@ -78,10 +96,13 @@ def build_file_record(
     filename = projection.get("filename", f"abbey_generated_{asset_id}.png")
     sprite_path = repo_root / SPRITE_ROOT_RELATIVE / filename
     glb_path = repo_root / GLB_ROOT_RELATIVE / f"{asset_id}.glb"
+    metadata_path = repo_root / METADATA_ROOT_RELATIVE / f"{asset_id}.meta.json"
     if not sprite_path.is_file():
         raise SyncError(f"{asset_id}: generated sprite is missing: {sprite_path}")
     if not glb_path.is_file():
         raise SyncError(f"{asset_id}: generated GLB is missing: {glb_path}")
+    if not metadata_path.is_file():
+        raise SyncError(f"{asset_id}: generated metadata is missing: {metadata_path}")
 
     cell_size = int(projection["cell_size"])
     views = projection["views"]
@@ -125,7 +146,8 @@ def build_file_record(
         "sourcePath": repository_path(repo_root, spec_path),
         "sourceSha256": sha256(spec_path),
         "sourceGlbPath": repository_path(repo_root, glb_path),
-        "sourceGlbSha256": sha256(glb_path),
+        "sourceMetadataPath": repository_path(repo_root, metadata_path),
+        "sourceGlbStructuralSha256": structural_metadata_sha256(metadata_path),
         "sourceRendererPath": RENDERER_RELATIVE.as_posix(),
         "sourceRendererSha256": renderer_hash,
         "abbeyPath": repository_path(repo_root, sprite_path),
