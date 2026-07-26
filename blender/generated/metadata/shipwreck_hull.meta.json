@@ -1,6 +1,6 @@
 {
   "id": "shipwreck_hull",
-  "generated_at": "2026-07-02T18:48:19.099170+00:00",
+  "generated_at": "2026-07-26T14:40:21.669916+00:00",
   "spec": {
     "id": "shipwreck_hull",
     "type": "terrain",
@@ -53,6 +53,39 @@
         "type": "loot"
       }
     ],
+    "sprite_projection": {
+      "enabled": true,
+      "filename": "abbey_generated_shipwreck_hull.png",
+      "cell_size": 64,
+      "views": [
+        "south"
+      ],
+      "camera_padding": 1.25,
+      "color_steps": 12,
+      "outline_color": [
+        0.07,
+        0.06,
+        0.055
+      ],
+      "catalog_entries": [
+        {
+          "stable_role_id": "role.prop.shipwreckHull",
+          "asset_id": "shipwreck_hull",
+          "roles": [
+            "prop.shipwreckHull"
+          ],
+          "component_type_names": [],
+          "visual_scale": 6.2,
+          "anchor_offset": [
+            0.0,
+            0.0
+          ],
+          "sort_offset": 14,
+          "phase_tint": true,
+          "authored_footprint": null
+        }
+      ]
+    },
     "pivot": "center_bottom"
   },
   "dimensions": {

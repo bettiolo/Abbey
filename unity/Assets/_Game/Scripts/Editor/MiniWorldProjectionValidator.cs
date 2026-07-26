@@ -205,9 +205,18 @@ namespace Abbey.Editor
             {
                 errors.Add($"{label}: curated sheets must use multiple import mode.");
             }
-            if (file.pixelsPerUnit != 16)
+            if (file.sheetCellSize.width != file.sheetCellSize.height
+                || file.sheetCellSize.width < 16
+                || file.sheetCellSize.width > 128
+                || file.sheetCellSize.width % 16 != 0
+                || file.dimensions.width % file.sheetCellSize.width != 0
+                || file.dimensions.height % file.sheetCellSize.height != 0)
             {
-                errors.Add($"{label}: pixelsPerUnit must be 16.");
+                errors.Add($"{label}: cell grid must use square 16..128px cells.");
+            }
+            if (file.pixelsPerUnit != file.sheetCellSize.width)
+            {
+                errors.Add($"{label}: pixelsPerUnit must match the sheet cell size.");
             }
             if (file.pivot == null || file.pivot.Length != 2)
             {

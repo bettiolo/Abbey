@@ -9,8 +9,15 @@ The authors ask that the pack itself not be sold as a standalone asset collectio
 `manifest.json` is the source of truth for provenance, hashes, dimensions, exact
 bottom-left slice rectangles, import pivots, PPU, stable role mappings, animation
 frames, visual scale, sorting, tint participation, authored obstacle footprints, and
-honestly unresolved roles. The committed PNGs are byte-identical copies of selected
+honestly unresolved roles. Generic committed PNGs are byte-identical copies of selected
 source sheets; the full archive and guide remain in ignored `third_party_cache/`.
+
+`AbbeyGeneratedIdentity/` contains derived sprite sheets for signature objects that the
+CC0 pack cannot honestly represent. They are deterministically rendered from the
+repository's validated asset specs and generated GLBs by
+`blender/scripts/render_identity_sprites.py`. Each generated sheet records the hashes of
+its source spec, GLB, renderer, and PNG in the same manifest. They do not change the
+license or authorship of the Merchant Shade source sheets.
 
 Acquisition pin:
 
@@ -27,7 +34,12 @@ Reproduce and validate locally:
 ```sh
 uv run --with-requirements tools/requirements-dev.txt \
   python tools/acquire_merchant_shade_miniworld.py
-uv run --with pillow python tools/validate_merchant_shade_miniworld.py --write-reports
+/opt/homebrew/bin/blender -b --factory-startup \
+  -P blender/scripts/render_identity_sprites.py -- --repo-root . --all
+uv run --with-requirements tools/requirements-dev.txt \
+  python tools/sync_identity_sprite_manifest.py
+uv run --with pillow python \
+  tools/validate_merchant_shade_miniworld.py --write-reports
 uv run --with-requirements tools/requirements-dev.txt \
   python tools/validate_merchant_shade_miniworld.py --with-cache
 ```
@@ -36,8 +48,9 @@ uv run --with-requirements tools/requirements-dev.txt \
 `inventory.md` lists every selected source sheet, mapped role, and unresolved role.
 The contact sheet is inventory evidence, not runtime art.
 
-The final sprite visual gate is intentionally blocked by the unresolved roles in the
-manifest. In particular, this pack has no honest Bellkeeper, Black Hound, Stag, ruined
-Bell Tower, broken shipwreck, moth, canine nightmare, or several other signature
-nightmare proxies. Infrastructure may use the reversible 3D fallback, but canonical
-sprite screenshots must not silently substitute unrelated farm animals or champions.
+The generated identity pass resolves the Bellkeeper, Black Hound, Stag, ruined Bell
+Tower, cloister, campfire, lantern, charcoal kiln, shipwreck pieces, hound chain, and
+five signature nightmares without dishonest third-party proxies. Six roles remain
+explicitly unresolved: Dead Worker, Root Walker, Bell Mimic, Hollow Deer, Charcoal
+Dead, and the sacred flame. Those retain the reversible 3D fallback until their own
+validated specs and readable sprite sheets exist.

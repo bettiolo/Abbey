@@ -14,5 +14,27 @@
     { "name": "flame", "type": "light" },
     { "name": "fuel_hook", "type": "hook" }
   ],
+  "sprite_projection": {
+    "enabled": true,
+    "filename": "abbey_generated_lantern_post_t1.png",
+    "cell_size": 48,
+    "views": ["south"],
+    "camera_padding": 1.25,
+    "color_steps": 12,
+    "outline_color": [0.08, 0.07, 0.065],
+    "catalog_entries": [
+      {
+        "stable_role_id": "role.building.lanternPost",
+        "asset_id": "lantern_post_t1",
+        "roles": ["building.lanternPost"],
+        "component_type_names": ["Abbey.Light.LightSource"],
+        "visual_scale": 2.5,
+        "anchor_offset": [0.0, 0.0],
+        "sort_offset": 16,
+        "phase_tint": false,
+        "authored_footprint": [1.0, 1.0]
+      }
+    ]
+  },
   "pivot": "center_bottom"
 }

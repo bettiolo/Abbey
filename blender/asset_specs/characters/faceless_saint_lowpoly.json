@@ -13,5 +13,27 @@
   "anchors": [
     { "name": "blessing", "type": "interaction" }
   ],
+  "sprite_projection": {
+    "enabled": true,
+    "filename": "abbey_generated_faceless_saint_lowpoly.png",
+    "cell_size": 48,
+    "views": ["south", "east", "north", "west"],
+    "camera_padding": 1.25,
+    "color_steps": 10,
+    "outline_color": [0.035, 0.03, 0.045],
+    "catalog_entries": [
+      {
+        "stable_role_id": "role.actor.nightmare.facelessSaint",
+        "asset_id": "FacelessSaint",
+        "roles": ["actor.nightmare"],
+        "component_type_names": ["Abbey.Nightmares.ConsequenceMonsterController"],
+        "visual_scale": 2.5,
+        "anchor_offset": [0.0, 0.0],
+        "sort_offset": 25,
+        "phase_tint": true,
+        "authored_footprint": null
+      }
+    ]
+  },
   "pivot": "center_bottom"
 }

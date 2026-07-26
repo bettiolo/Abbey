@@ -74,6 +74,16 @@ def resolve_under(root: Path, relative: str | Path, label: str) -> Path:
     return candidate
 
 
+def find_repo_root(curated_root: Path) -> Path | None:
+    for candidate in (curated_root, *curated_root.parents):
+        if (
+            (candidate / "unity" / "Assets").is_dir()
+            and (candidate / "blender" / "asset_specs").is_dir()
+        ):
+            return candidate
+    return None
+
+
 def iter_sprite_refs(entry: dict) -> list[str]:
     refs: list[str] = []
     default = entry.get("defaultSprite")
@@ -94,6 +104,7 @@ def iter_sprite_refs(entry: dict) -> list[str]:
 
 def validate(curated_root: Path, cache_root: Path | None = None) -> dict:
     errors: list[str] = []
+    repo_root = find_repo_root(curated_root)
     manifest = load_manifest(curated_root)
     source = manifest.get("source") or {}
     for key, expected in EXPECTED_ARCHIVE.items():
@@ -153,13 +164,50 @@ def validate(curated_root: Path, cache_root: Path | None = None) -> dict:
             errors.append(f"{file_id}: dimensions mismatch")
         if expected_dimensions != dimensions:
             errors.append(f"{file_id}: expectedDimensions drift")
-        if width % 16 or height % 16 or record.get("sheetCellSize") != {
-            "width": 16,
-            "height": 16,
-        }:
-            errors.append(f"{file_id}: sheet is not on the 16x16 grid")
-        if record.get("pixelsPerUnit") != 16:
-            errors.append(f"{file_id}: pixelsPerUnit must be 16")
+        source_kind = record.get("sourceKind", "merchantShadeCC0")
+        cell = record.get("sheetCellSize") or {}
+        cell_width = cell.get("width")
+        cell_height = cell.get("height")
+        if source_kind == "abbeySpecGenerated":
+            if (
+                not isinstance(cell_width, int)
+                or cell_width < 16
+                or cell_width > 128
+                or cell_width % 16
+                or cell_height != cell_width
+                or width % cell_width
+                or height % cell_height
+            ):
+                errors.append(f"{file_id}: invalid generated sprite cell grid")
+            if record.get("pixelsPerUnit") != cell_width:
+                errors.append(
+                    f"{file_id}: generated pixelsPerUnit must match its cell size"
+                )
+            if repo_root is not None:
+                for path_key, hash_key in (
+                    ("sourcePath", "sourceSha256"),
+                    ("sourceGlbPath", "sourceGlbSha256"),
+                    ("sourceRendererPath", "sourceRendererSha256"),
+                ):
+                    try:
+                        source = resolve_under(
+                            repo_root, str(record.get(path_key, "")), path_key
+                        )
+                    except ValidationError as exc:
+                        errors.append(f"{file_id}: {exc}")
+                        continue
+                    if not source.is_file():
+                        errors.append(f"{file_id}: missing generated source {source}")
+                    elif sha256(source) != record.get(hash_key):
+                        errors.append(f"{file_id}: {hash_key} mismatch")
+        else:
+            if width % 16 or height % 16 or cell != {
+                "width": 16,
+                "height": 16,
+            }:
+                errors.append(f"{file_id}: sheet is not on the 16x16 grid")
+            if record.get("pixelsPerUnit") != 16:
+                errors.append(f"{file_id}: pixelsPerUnit must be 16")
         rects = slice_rects_by_file.setdefault(file_id, set())
         slices = record.get("slices")
         if not isinstance(slices, list) or not slices:
@@ -194,7 +242,7 @@ def validate(curated_root: Path, cache_root: Path | None = None) -> dict:
             if values in rects:
                 errors.append(f"{file_id}: duplicate slice rect {values}")
             rects.add(values)
-        if cache_root is not None:
+        if cache_root is not None and source_kind != "abbeySpecGenerated":
             source_path = record.get("sourcePath")
             try:
                 source_file = resolve_under(cache_root, str(source_path), "sourcePath")
@@ -301,19 +349,22 @@ def validate(curated_root: Path, cache_root: Path | None = None) -> dict:
 
 def write_inventory(curated_root: Path, manifest: dict) -> None:
     lines = [
-        "# Merchant Shade Mini World curated inventory",
+        "# Sprite-projection inventory",
         "",
-        "Generated deterministically from `manifest.json`. The source archive is not committed.",
+        "Generated deterministically from `manifest.json`. Generic sheets come from the "
+        "pinned Merchant Shade CC0 archive; signature sheets are rendered from validated "
+        "Abbey asset specs and generated GLBs.",
         "",
-        "## Selected source sheets",
+        "## Selected and generated sheets",
         "",
-        "| File ID | Category | Dimensions | SHA-256 | Source path |",
-        "|---|---|---:|---|---|",
+        "| File ID | Source | Category | Dimensions | SHA-256 | Source path |",
+        "|---|---|---|---:|---|---|",
     ]
     for record in manifest["files"]:
         dims = record["dimensions"]
         lines.append(
-            f"| `{record['fileId']}` | {record['category']} | "
+            f"| `{record['fileId']}` | `{record.get('sourceKind', 'merchantShadeCC0')}` | "
+            f"{record['category']} | "
             f"{dims['width']}×{dims['height']} | `{record['sha256']}` | "
             f"`{record['sourcePath']}` |"
         )
@@ -380,16 +431,31 @@ def main() -> int:
     curated_root = repo_root / CURATED_RELATIVE
     try:
         manifest = load_manifest(curated_root)
+        if args.write_reports:
+            # Reports summarize the current manifest and sheets, so regenerate
+            # them before validating their recorded hashes.
+            write_contact_sheet(curated_root, manifest)
+            contact = curated_root / "contact-sheet.png"
+            width, height = png_dimensions(contact)
+            reports = manifest.setdefault("reports", {})
+            reports["inventory"] = "inventory.md"
+            reports["contactSheet"] = {
+                "path": "contact-sheet.png",
+                "sha256": sha256(contact),
+                "dimensions": {"width": width, "height": height},
+            }
+            (curated_root / "manifest.json").write_text(
+                json.dumps(manifest, indent=2, ensure_ascii=False) + "\n",
+                encoding="utf-8",
+            )
+            write_inventory(curated_root, manifest)
+            print("Wrote inventory.md and contact-sheet.png")
         cache_root = None
         if args.with_cache:
             cache_root = repo_root / (
                 "third_party_cache/MerchantShade/MiniWorldSprites/extracted"
             )
         result = validate(curated_root, cache_root)
-        if args.write_reports:
-            write_inventory(curated_root, manifest)
-            write_contact_sheet(curated_root, manifest)
-            print("Wrote inventory.md and contact-sheet.png")
     except ValidationError as exc:
         print(f"ERROR:\n{exc}")
         return 1

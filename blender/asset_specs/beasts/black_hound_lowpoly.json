@@ -15,5 +15,27 @@
     { "name": "collar", "type": "attach" },
     { "name": "saddle_point", "type": "mount" }
   ],
+  "sprite_projection": {
+    "enabled": true,
+    "filename": "abbey_generated_black_hound_lowpoly.png",
+    "cell_size": 32,
+    "views": ["south", "east", "north", "west"],
+    "camera_padding": 1.35,
+    "color_steps": 12,
+    "outline_color": [0.035, 0.04, 0.05],
+    "catalog_entries": [
+      {
+        "stable_role_id": "role.actor.blackHound",
+        "asset_id": "black_hound_lowpoly",
+        "roles": ["actor.blackHound"],
+        "component_type_names": ["Abbey.Beast.HoundController"],
+        "visual_scale": 2.2,
+        "anchor_offset": [0.0, 0.0],
+        "sort_offset": 23,
+        "phase_tint": true,
+        "authored_footprint": null
+      }
+    ]
+  },
   "pivot": "center_bottom"
 }
