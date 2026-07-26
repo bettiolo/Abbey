@@ -1194,7 +1194,7 @@ tasks:
     branch: codex/sprite-art-completion
     validation: >
       Technical candidate passed the local Unity 6000.5.2f1 MCP gate at runtime commit
-      ed408bb: both scenes, deterministic sprite import/catalog validation, EditMode
+      0f2d678: both scenes, deterministic sprite import/catalog validation, EditMode
       418/418, PlayMode 72/72, console errors 0, and six inspected screenshots. A
       deterministic Abbey identity bake resolved 17 of the original 23 visual gaps;
       six roles remain explicitly unresolved, so the no-mixed-fallback acceptance

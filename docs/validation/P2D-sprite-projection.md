@@ -1,6 +1,6 @@
 # P2D reversible sprite-projection candidate
 
-Validated locally on 2026-07-26 at runtime commit `ed408bb` with Unity `6000.5.2f1`.
+Validated locally on 2026-07-26 at runtime commit `0f2d678` with Unity `6000.5.2f1`.
 
 ## Implemented candidate
 
@@ -35,7 +35,7 @@ Validated locally on 2026-07-26 at runtime commit `ed408bb` with Unity `6000.5.2
 - Unity console errors: 0.
 - Canonical images inspected: `day_camp`, `dusk_recall`, `night_attack`, `morning_after`,
   `map2_grove_day`, and `map2_false_bell_night`.
-- `./tools/check_all.sh`: OK; design 7/7, assets 356 passed / 8 skipped, Blender changed
+- `./tools/check_all.sh`: OK; design 7/7, assets 357 passed / 8 skipped, Blender changed
   verification clean. Unity batch steps skipped because the MCP editor held the project
   lock; the authoritative MCP results above cover them.
 
