@@ -50,9 +50,9 @@ uv run --with-requirements tools/requirements-dev.txt \
 `inventory.md` lists every selected source sheet, mapped role, and unresolved role.
 The contact sheet is inventory evidence, not runtime art.
 
-The generated identity pass resolves the Bellkeeper, Black Hound, Stag, ruined Bell
-Tower, cloister, campfire, lantern, charcoal kiln, shipwreck pieces, hound chain, and
-five signature nightmares without dishonest third-party proxies. Six roles remain
-explicitly unresolved: Dead Worker, Root Walker, Bell Mimic, Hollow Deer, Charcoal
-Dead, and the sacred flame. Those retain the reversible 3D fallback until their own
-validated specs and readable sprite sheets exist.
+The generated identity pass resolves all 23 original signature gaps without dishonest
+third-party proxies. That includes the Bellkeeper, Black Hound, Stag, ruined Bell Tower,
+cloister, campfire, lantern, charcoal kiln, shipwreck pieces, hound chain, eleven signature
+nightmares, and the Sacred Flame. The manifest now has zero unresolved identities; the
+human art gate remains responsible for the final camera, scale, palette, and readability
+verdict.
